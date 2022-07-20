@@ -7,16 +7,22 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+element.style {
+    margin-left: 60px;
+}
+
 .First_cont {
     width: 100%;
     height: auto;
+    
     background-color: #bfecf3;
 }
 
 .Diagos_start {
     width: 95%;
+    
     display: flex;
-    margin: auto;
+   margin: auto;
 }
 
 .form {
@@ -173,7 +179,6 @@ body {
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: 58vh 58vh;
     grid-gap: 3%;
-    /* margin: auto; */
     justify-content: center;
     margin-top: 3%;
 }

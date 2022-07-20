@@ -2,6 +2,8 @@
 body
 {
   background-color:gainsboro ;
+  margin:auto 0;
+  padding: auto 0;
 }
 .slideshow-container {
     width: 98%;
@@ -101,21 +103,22 @@ body
   }
   #feasureBrand
   {
-    display: grid;
-    width: 75%;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+   margin: auto;
   }
   #feasureBrand>div{
     height: 260px;
+    width: 20%;
     background-color: white;
     box-shadow: 0 6px 12px -4px rgb(40 11 18 / 10%);
     border-radius: 5px;
-    margin-left: 16px;
+    margin: 7px;
+   
     
   }
   #feasureBrand>div>img{
-    margin-left: 10px;
+    margin-left: 13px;
   }
  .title{
     text-align: center;
@@ -160,20 +163,20 @@ body
   }
   #ShopBrand
   {
-    display: grid;
-    width: 75%;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+   margin: auto;
   }
   #ShopBrand>div{
     height: 260px;
+    width: 20%;
     background-color: white;
     box-shadow: 0 6px 12px -4px rgb(40 11 18 / 10%);
     border-radius: 5px;
-    margin-left: 16px;
+    margin: 7px;
   }
   #ShopBrand>div>img{
-    margin-left: 10px;
+    margin-left: 13px;
    
   }
   .ShopTitle

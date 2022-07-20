@@ -67,6 +67,15 @@ body {
     transition: background-color 0.6s ease;
 }
 
+#div1{
+    display:flex;
+    justify-content: space-around;
+}
+#div1>div{
+    border: solid red;
+}
+
+
 .active,
 .dot:hover {
     background-color: #717171;

@@ -1,0 +1,440 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.First_cont {
+    width: 100%;
+    height: auto;
+    background-color: #bfecf3;
+}
+
+.Diagos_start {
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+
+.form {
+    background-color: white;
+    padding: 1%;
+}
+
+.Forrmdata p, label {
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.Forrmdata label {
+    color: #02b7c2;
+}
+
+.Forrmdata select {
+    width: 100%;
+    padding: 2%;
+    border: none;
+}
+
+.Forrmdata input {
+    display: block;
+    font-size: 17px;
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    width: 95%;
+    padding: 2.5%;
+    border-bottom: 2px solid rgb(228, 222, 222);
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    height: 10vh;
+}
+
+.btn button {
+    background-color: white;
+    font-size: 15px;
+    border: .2px rgb(206, 205, 205) solid;
+}
+
+.btn button:nth-child(2) {
+    margin-left: 1.5%;
+}
+
+.btn button:nth-child(1)>i {
+    font-size: 20px;
+    color: violet;
+    margin-right: 10%;
+}
+
+.btn button:nth-child(2)>i {
+    font-size: 20px;
+    color: #17a2b8;
+    margin-right: 10%;
+}
+
+.checkbox {
+    padding: 2%;
+    margin-top: 6%;
+}
+
+.form button {
+    margin-top: 5%;
+}
+
+#booknow {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    background-color: rgb(36, 174, 177);
+    border: none;
+    border-radius: 3%;
+    color: white;
+}
+
+.Diagos_start div {
+    margin: 1%;
+}
+
+.btn {
+    display: flex;
+}
+
+.form>div>button {
+    width: 48%;
+    padding: 2%;
+}
+
+/* ---------- */
+
+.main {
+    background-color: rgb(241, 235, 241);
+    border: 1px rgb(241, 235, 241) solid;
+    margin: auto;
+}
+
+.Second_cont {
+    width: 95%;
+    background-color: white;
+    margin-top: 2%;
+    padding: 2%;
+    margin: auto;
+}
+
+.Second_cont p {
+    margin-top: 2%;
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.packages>div {
+    border: 2px solid white;
+    width: 17.5%;
+    /* margin: auto; */
+    margin: 1%;
+    height: 10vh;
+}
+
+.packages>div {
+    display: flex;
+}
+
+.packages>div>img {
+    border-radius: 50%;
+    margin: 5%;
+}
+
+.packages>div>h3 {
+    margin: 5%;
+}
+
+#heading {
+    margin: 2% 5%;
+}
+
+#heading>p {
+    margin: 2% 0%;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 58vh 58vh;
+    grid-gap: 3%;
+    /* margin: auto; */
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.grid-item>h2 {
+    padding: 2%;
+}
+
+.grid-item>p {
+    align-items: center;
+    padding: 2%;
+}
+
+.grid>div:nth-child(2n+1) {
+    background-color: #fff4eb;
+}
+
+.grid>div:nth-child(2n) {
+    background-color: #eafaff;
+}
+
+.grid>div:nth-child(1)>div>button {
+    width: 150px;
+    height: 30px;
+    margin: 4% 3%;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    color: #24aeb1;
+}
+
+del, #start, #price {
+    padding: 2%;
+}
+
+#price {
+    font-size: 25px;
+    color: rgb(233, 114, 134);
+}
+
+.grid>div:nth-child(1)>div>img {
+    margin-left: 68px;
+    margin-bottom: 0;
+}
+
+.grid>div>div>button {
+    width: 150px;
+    height: 30px;
+    margin: 4% 3%;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    color: #24aeb1;
+}
+
+.grid>div>div>img {
+    margin-left: 64px;
+    margin-bottom: 0;
+}
+
+#heading2 {
+    margin: 4% 5%;
+}
+
+#heading2>p {
+    margin: 2% 0%;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+}
+
+.grid2 {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 43vh;
+    grid-gap: 3%;
+    /* margin: auto; */
+    justify-content: center;
+    margin-top: 3%;
+    margin: auto;
+}
+
+.grid2>div {
+    border: 1px #24aeb1 solid;
+    border-radius: 10px;
+}
+
+.grid-itemI, .grid-itemII, .grid-itemIII {
+    background-color: #fff;
+}
+
+.myFlex {
+    display: flex;
+}
+
+.myFlex>div:nth-child(1) {
+    margin: 5%;
+}
+
+.myFlex>div:nth-child(1)>p {
+    color: #24aeb1;
+    margin-top: 2%;
+}
+
+.myFlex>div:nth-child(2) {
+    margin: 8% 11%;
+}
+
+#myIcons1 {
+    font-size: 13px;
+    color: #24aeb1;
+}
+
+#myIcons2 {
+    margin: 3% 11%;
+}
+
+.line {
+    color: #24aeb1;
+}
+
+.mypara {
+    text-align: center;
+    font-size: 17px;
+}
+
+#heading3 {
+    margin: 4% 5%;
+}
+
+#heading3>p {
+    margin: 2% 0%;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+}
+
+.grid3 {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 20% 21% 23% 20%;
+    grid-template-rows: 15vh;
+    grid-gap: 3%;
+    /* margin: auto; */
+    justify-content: center;
+    margin-top: 3%;
+    margin: auto;
+}
+
+.grid3>div {
+    display: flex;
+    background-color: white;
+}
+
+.grid3>div>div {
+    margin: 5% 4%;
+}
+
+.myLast {
+    width: 84%;
+    height: 45vh;
+    margin: 0% auto;
+    margin-top: 2%;
+    background-color: white;
+}
+
+.myLast>h2, .myLast>p {
+    margin: .5% 3%;
+}
+
+.myLast>img {
+    margin: .5% 6%;
+}
+
+.myLast>img:nth-child(1) {
+    margin: .5% 10%;
+}
+
+#imgset {
+    margin: 1% 35%;
+}
+
+.myLast2 {
+    display: grid;
+    width: 84%;
+    height: 15vh;
+    grid-template-columns: 20% 27%;
+    column-gap: 5%;
+    background-color: #e6f9e7;
+    margin: auto;
+    justify-content: center;
+}
+
+.myLast2>div {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.myLast2>div>button {
+    width: 100%;
+    height: 10vh;
+    background-color: #24aeb1;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.myLast2>div>div:nth-child(2)>p:nth-child(1) {
+    font-size: 20px;
+}
+
+.myLast2>div>div:nth-child(2)>p:nth-child(2) {
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.lastHead {
+    width: 100%;
+    background-color: #24aeb1;
+    height: 15vh;
+    border: 1px solid #24aeb1;
+}
+
+.lastHead ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastHead ul:nth-child(1) {
+    margin-top: 2%;
+}
+
+.lastHead ul:nth-child(2)>li:nth-child(1)>a {
+    color: #5cdfe2;
+}
+
+.lastHead ul li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: .2%;
+}
+
+.lastHead ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.automation {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.automation>a {
+    text-decoration: none;
+    color: #007bff;
+}

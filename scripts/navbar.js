@@ -42,8 +42,8 @@ function myupload(){
 document.querySelector("#myLab").addEventListener("click",myLab);
 document.querySelector("#myWell").addEventListener("click",myWell);
 function myWell(){
-    window.location.href="des.html"  
+    window.location.href="wellness.html"  
 }
 function myLab(){
-    window.location.href="des.html"  
+    window.location.href="Lab_test.html"  
 }

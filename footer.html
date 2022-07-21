@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title>Document</title>
+    <style>
+        #footer{
+    width: 100%;
+    height: 490px;
+    background:white;
+    color:grey;
+    font-family: 'Lato', sans-serif;
+}
+.firstDiv{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.f_logo{
+    width: 21%;
+    margin: 20px;
+    border-right: 1px solid lightgray;
+    /* border: 1px solid yellow; */
+
+}
+.f_logo img{
+    width: 150px;
+    margin-left: 41%;
+}
+.f_logo+div{
+    margin-left: 32px;
+    font-size: 12px;
+    letter-spacing: 1;
+    /* border: 1px solid green; */
+}
+.firstDiv p{
+    margin-top: -30px;
+    line-height: 17px;
+}
+
+.secondDiv{
+    width: 77%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17% 25%;
+    gap: 2%;
+    
+}
+.secondDiv>div:last-child{
+    border-left: 1px solid lightgray;
+    padding-left: 28px;
+}
+.secondDiv h5+p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 18px;
+}
+.secondDiv h5{
+    color: rgb(11,18,76);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.secondDiv ul{
+    line-height: 21px;
+}
+.secondDiv ul li{
+    list-style-type: none;
+}
+.secondDiv ul li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+.secondDiv>div:last-child>div:nth-child(3){
+    display: flex;
+    gap: 6px;
+}
+.secondDiv input{
+    width: 180px;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+}
+.secondDiv button{
+    width: 42px;
+    padding: 4px 0 0 4px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    background-color: rgb(36, 174, 177);
+    border: none;
+    cursor: pointer;
+}
+.secondDiv button>img{
+    width: 25px;
+}
+.f_icon{
+    margin-top: 20px;
+    display: flex;
+    gap: 4%;
+}
+.f_icon>img{
+    width: 46%;
+}
+.f_icon+h6{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 12px;
+}
+.f_icon+h6>a{
+    color: rgb(128, 123, 123);
+    text-decoration: none;
+}
+
+.last{
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    font-size: 11px;
+    border-top: 1px solid lightgray;
+    margin-top: 55px;
+}
+.last>div{
+    margin-top: 16px;
+    display: flex;
+}
+.last>div:first-child{
+   margin-left: 6%;
+}
+.last>div:last-child{
+   margin-right: 6%;
+}
+.last img{
+    height: 30px;
+    width: 30px;
+}
+.last p{
+    margin-top: 11px;
+    margin-left: 8px;
+}
+    </style>
+</head>
+<body>
+    <footer id="footer">
+        <div class="firstDiv">
+          <div class="f_logo">
+            <a href="index.html"
+              ><img
+                src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg"
+                alt="Logo"
+            /></a>
+          </div>
+          <div>
+            <p>
+              Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha &
+              Company – one of India’s most trusted <br />
+              pharmacies, with over 100 years’ experience in dispensing quality
+              medicines.
+            </p>
+          </div>
+        </div>
+  
+        <div class="secondDiv">
+          <div>
+            <h5>COMPANY</h5>
+            <ul>
+              <li><a href="#">About Netmeds</a></li>
+              <li><a href="#">Customers Speak</a></li>
+              <li><a href="#">In the News</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>SHOPPING</h5>
+            <ul>
+              <li><a href="#">Browse by A-Z</a></li>
+              <li><a href="#">Browse by Manufactures</a></li>
+              <li><a href="#">Health Articles</a></li>
+              <li><a href="#">Offers / Coupons</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>CATEGORIES</h5>
+            <ul>
+              <li><a href="#">Ayush</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">Family Care</a></li>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Personal Care</a></li>
+              <li><a href="#">Treatments</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>SOCIAL</h5>
+            <ul>
+              <li><a href="https://www.netmeds.com/patientsalike">Patients Alike</a></li>
+              <li><a href="https://www.facebook.com/NetMeds/">Facebook</a></li>
+              <li><a href="https://twitter.com/NetMeds">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/company/netmeds-marketplace-limited?originalSubdomain=in">LinkedIn</a></li>
+              <li><a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw">YouTube</a></li>
+              <li><a href="https://www.netmeds.com/refer-earn">Refer & Earn</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+            <p>
+              Get a free subscription to our health and fitness tip and stay tuned
+              to our latest offers
+            </p>
+            <div>
+              <input type="email" placeholder="Enter your email address" />
+              <button>
+                <img src="/Images/f_btnIcon.png" alt="" class="invert" />
+              </button>
+            </div>
+            <div class="f_icon">
+              <img
+                src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png"
+                alt=""
+              />
+              <img
+                src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png"
+                alt=""
+              />
+            </div>
+            <h6><a href="#">Download App</a></h6>
+          </div>
+        </div>
+  
+        <div class="last">
+          <div>
+            <img src="Images/navIcon.png" alt="" />
+            <p>Medicine Products</p>
+          </div>
+          <div>
+            <img src="Images/navIcon.png" alt="" />
+            <p>Health Product</p>
+          </div>
+          <div>
+            <img src="Images/navIcon.png" alt="" />
+            <p>Book test & checkups</p>
+          </div>
+          <div>Copyright© 2021 Netmeds Marketplace Ltd.</div>
+        </div>
+      </footer>
+    </body>
+</body>
+</html>

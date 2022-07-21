@@ -36,3 +36,13 @@ setInterval(function() {
     // plusSlides(1);
 
 },4000)
+
+
+
+document.querySelector("#div1>div:nth-child(2)").addEventListener("click", ()=>{
+    window.location.href="beauty.html";
+})
+
+document.querySelector("#div1>div:last-child").addEventListener("click", ()=>{
+    window.location.href="wellness.html";
+})

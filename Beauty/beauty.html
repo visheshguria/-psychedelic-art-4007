@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty</title>
     <link rel="stylesheet" href="beauty.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <link rel="shortcut icon"
     href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
     type="image/x-icon" />
@@ -84,19 +88,66 @@
  </div>
  <h2 class="TopO"> Top offers on Brands</h2>
 
- <div id="topOffer">
-  <div>
-    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657025786_VLCC-436-X-224.jpg" alt="" srcset="">
-  </div>
-  <div>
-    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657135073_Revolution-436x224.jpg" alt="" srcset="">
-  </div>
-  <div>
-    <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657027227_Soulflower_-_436x224.jpg" alt="" srcset="">
-    
-  </div>
+  <!-- starting of swiper  -->
+  <div class="swiper mySwiper">
+    <!-- starting of swiper wrapper  -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div>
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657025524_Mamaearth-Body-wash-436-X-224.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657025786_VLCC-436-X-224.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
 
- </div>
+        <div>
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657135073_Revolution-436x224.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div>
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657025786_VLCC-436-X-224.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div>
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657135073_Revolution-436x224.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657027227_Soulflower_-_436x224.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ending of swiper wrapper  -->
+    <div class="swiper-button-next "></div>
+    <div class="swiper-button-prev  "></div>
+   
+  </div>
+  <!-- ending of swiper -->
 
  <h2 class="shopCat"> Shop by Category</h2>
  <div id="ShopBrand">
@@ -249,3 +300,23 @@
   </body>
 </html>
  <script src="beauty.js"></script>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <script>
+  var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 9.3,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+ </script>

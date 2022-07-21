@@ -39,6 +39,9 @@ setInterval(function() {
 
 
 
+
+
+
 document.querySelector("#div1>div:nth-child(2)").addEventListener("click", ()=>{
     window.location.href="beauty.html";
 })

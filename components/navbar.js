@@ -1,10 +1,12 @@
 function navbar(){
-    return `<img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="netmeds">
+    return `<a href="index.html">
+    <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="netmeds">
+    </a>
     <div id="search-bar">
         <select name="" id="">
             <option  value="">Deliver to <span id="pin-code">110002</span></option>
         </select>
-        <input  type="text" placeholder="Search for medicine and wellness products...">
+        <input  type="text" placeholder="┊    Search for medicine and wellness products...">
         
     </div>
     <div id="right-data">

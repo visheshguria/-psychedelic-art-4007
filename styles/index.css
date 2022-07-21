@@ -5,10 +5,10 @@ body {
 }
 
 .slideshow-container {
-    width: 80%;
+    width: 90%;
     position: relative;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 40px;
     /* border: solid red; */
 }
 

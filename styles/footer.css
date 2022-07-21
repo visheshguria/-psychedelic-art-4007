@@ -41,7 +41,7 @@
     display: grid;
     grid-template-columns: 17% 17% 17% 17% 25%;
     gap: 2%;
-    /* border: 1px solid red; */
+    
 }
 .secondDiv>div:last-child{
     border-left: 1px solid lightgray;
@@ -53,7 +53,7 @@
     margin-bottom: 18px;
 }
 .secondDiv h5{
-    color: black;
+    color: rgb(11,18,76);
     font-size: 13px;
     margin-bottom: 8px;
 }
@@ -67,6 +67,7 @@
     text-decoration: none;
     color: black;
     font-size: 12px;
+    
     font-family: 'Lato', sans-serif;
 }
 
@@ -108,7 +109,7 @@
     font-size: 12px;
 }
 .f_icon+h6>a{
-    color: white;
+    color: rgb(128, 123, 123);
     text-decoration: none;
 }
 

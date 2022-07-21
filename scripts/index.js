@@ -96,7 +96,21 @@ setInterval(function () {
 
 //swiper division
 
-
+document.getElementById("ayush").addEventListener("click", ()=>{
+    window.location.href= "ayush.html";
+})
+document.getElementById("mom&baby").addEventListener("click", ()=>{
+    window.location.href= "mom&baby.html";
+})
+document.getElementById("devices").addEventListener("click", ()=>{
+    window.location.href= "devices.html";
+})
+document.getElementById("fitness").addEventListener("click", ()=>{
+    window.location.href= "fitness.html";
+})
+document.getElementById("sexualwellness").addEventListener("click", ()=>{
+    window.location.href= "sexualwellness.html";
+})
 
 
 

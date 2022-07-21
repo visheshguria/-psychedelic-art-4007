@@ -94,7 +94,6 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    ;
 }
 
 #div2 {
@@ -102,7 +101,6 @@ body {
     width: 80%;
     margin: auto;
     margin-top: 50px;
-    ;
 }
 
 #div2>div:first-child {
@@ -125,7 +123,6 @@ body {
 #div2>div:last-child>div {
     /* border: solid red; */
     border-radius: 10px;
-    ;
     overflow: hidden;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     cursor: pointer;
@@ -136,7 +133,6 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    ;
 }
 
 .swiper {
@@ -198,15 +194,70 @@ body {
     width: 85%;
     /* margin: 50px 0px;; */
     margin-top: 50px;;
-    margin-bottom: 50px;    ;
+    margin-bottom: 50px
 }
+
+
+#div5 {
+    /* border: solid green; */
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#div5>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+#div5>div:first-child>p:last-child {
+    cursor: pointer;
+    color: rgb(255, 97, 29)
+}
+
+#div5>div:last-child {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5,1fr);
+    margin: auto;
+    text-align: center;
+    /* border: solid yellow; */
+}
+
+#div5>div:last-child>div {
+    /* border: solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    padding: 30px;
+}
+
+#div5>div:last-child>div>img {
+    width: 70%;
+    /* height: 30%; */
+    border-radius: 10px;
+}
+
+
+
+
+
 #div6{
     margin: auto;
     /* border: solid red; */
     width: 85%;
     /* margin: 50px 0px;; */
     margin-top: 50px;;
-    margin-bottom: 50px;    ;
+    margin-bottom: 50px
+}
+
+#home-text{
+    width:80%;
+    margin: auto;
+    text-align: justify;
+    line-height: 20px;
 }
 .TopO{
     margin-left: 50px;;
@@ -254,7 +305,6 @@ body {
 }
 
 #home-text {
-    margin: 0px 100px;
-    line-height: 20px;
-    ;
+    /* margin: 0px 100px; */
+   
 }

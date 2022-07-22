@@ -1,27 +1,31 @@
-body{
+body {
     margin: auto 0;
     padding: auto 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#navbar{
+
+#navbar {
     height: auto;
     background-color: #32aeb1;
     display: flex;
     justify-content: space-around;
     padding: 20px 140px;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 10;
 }
-#navbar>img{
+
+#navbar>img {
     cursor: pointer;
 }
-#search-bar{
+
+#search-bar {
     width: 45%;
     display: flex;
     height: 45px;
 }
-#search-bar input{
+
+#search-bar input {
     width: 70%;
     border: none;
     height: 95%;
@@ -31,7 +35,8 @@ body{
     border-bottom-right-radius: 7px;
     padding-left: 5%;
 }
-#search-bar select{
+
+#search-bar select {
     width: 30%;
     height: 100%;
     border: none;
@@ -39,23 +44,28 @@ body{
     border-bottom-left-radius: 7px;
     padding-left: 20px;
 }
-#search-bar select>option{
+
+#search-bar select>option {
     height: 30px;
     color: grey;
 }
-#right-data{
+
+#right-data {
     display: flex;
     width: 26%;
     justify-content: space-between;
 }
-.upper{
+
+.upper {
     display: flex;
     width: auto;
     color: white;
     cursor: pointer;
+    align-items: center;
 
 }
-.upper i{
+
+.upper i {
     margin-right: 12px;
     margin-top: 13px;
     color: white;
@@ -63,7 +73,7 @@ body{
 }
 
 
-#sec-nav{
+#sec-nav {
     padding-top: 10px;
     height: 70px;
     background-color: #32aeb1;
@@ -71,18 +81,22 @@ body{
     justify-content: space-around;
     padding: 0px 200px;
 }
-.nav-item{
+
+.nav-item {
     display: flex;
     width: 12%;
     cursor: pointer;
     color: white;
+    align-items: center;
 }
-.nav-item img{
+
+.nav-item img {
     width: 52px;
     height: 50px;
     border-radius: 8px;
 }
-.nav-item select{
+
+.nav-item select {
     height: 30px;
     margin-top: 10px;
     background-color: #32aeb1;
@@ -90,14 +104,16 @@ body{
     cursor: pointer;
     color: white;
 }
-#third-nav{
+
+#third-nav {
     height: 70px;
     background-color: white;
     display: flex;
     justify-content: space-around;
     padding: 0px 220px;
 }
-#third-nav p{
+
+#third-nav p {
     font-size: 13px;
     color: #151b39;
     cursor: pointer;
@@ -111,41 +127,48 @@ body{
     border: none;
     background-color: #32aeb1;
     margin-left: -6px;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
     display: flex;
     width: 15%;
-    
-  }
-  .dropdown img{
+
+}
+
+.dropdown img {
     width: 52px;
     height: 50px;
     border-radius: 8px;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-top: 60px;
     margin-left: 50px;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #32aeb1;}
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #32aeb1;
+}

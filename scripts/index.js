@@ -141,3 +141,47 @@ document.querySelector("#div1>div:nth-child(2)").addEventListener("click", () =>
 document.querySelector("#div1>div:last-child").addEventListener("click", () => {
     window.location.href = "wellness.html";
 })
+
+
+
+
+
+var data5=[
+    {
+        img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1",
+        name:"Lung Care",
+
+    },
+    {
+        img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1",
+        name:"Weight Care", 
+    },
+    {
+        img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1",
+        name:"Women's Care",
+    },
+    {
+        img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg?v=1",
+        name:"Bone and Joint Pain",
+    },
+    {
+        img:"https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg?v=1",
+        name:"Cold and Fever",
+    }
+]
+
+// var products=JSON.parse(localStorage.getItem("shoppingitems"))
+var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
+data5.map(function(ele){
+    
+    var div1=document.createElement("div")
+    var img1=document.createElement("img")
+    img1.setAttribute("id","b5-img")
+    img1.setAttribute("src",ele.img)
+    var h3=document.createElement("h3")
+    h3.textContent=ele.name
+   
+    div1.append(img1,h3)
+    document.querySelector("#div13").append(div1);
+
+});

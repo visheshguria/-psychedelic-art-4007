@@ -11,9 +11,12 @@ body {
   =============================================*/
   
   #mainCont {
-    width: 98%;
+    width: 80%;
     margin: auto;
+  
     display: flex;
+    float: left;
+    margin-left: 5%;
     /* border: 1px solid black; */
   }
   

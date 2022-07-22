@@ -1,0 +1,397 @@
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+  }
+  
+  /**==============================================
+   * *                   Category CSS
+  =============================================*/
+  
+  #mainCont {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid black; */
+  }
+  
+  #leftDivision {
+    width: 21%;
+    /* border: 1px solid black; */
+  }
+  
+  #rightDivision {
+    width: 79%;
+    /* border: 1px solid black; */
+  }
+  
+  #Category {
+    width: 93%;
+    font-size: 20px;
+    color: #6f7284;
+    line-height: 1.6em;
+    padding-left: 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  #Category summary {
+    letter-spacing: 0.5px;
+    width: 200px;
+    padding: 5px 0 10px 10px;
+    border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+    cursor: pointer;
+  }
+  
+  #Category p {
+    letter-spacing: 0.5px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  
+  #Category p:nth-last-child(1) {
+    border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+    padding: 5px 0 15px 25px;
+  }
+  
+  #Category>h2 {
+    width: 200px;
+    padding: 10px 0 10px 15px;
+    margin: 10px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+    color: black;
+  }
+  
+  /**==============================================
+   * *                   Filter CSS
+   =============================================*/
+  
+  #filter {
+    width: 93%;
+    font-size: 20px;
+    color: #6f7284;
+    line-height: 1.6em;
+    padding-left: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  #filter>span {
+    display: block;
+    font-size: 24px;
+    color: black;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid rgb(21, 27, 57, 0.09);
+  }
+  
+  #filter input {
+    border-bottom: 1px solid rgb(21, 27, 57, 0.1);
+    margin-left: 10px;
+    margin-bottom: 17px;
+    overflow: hidden;
+    line-height: 1.3em;
+  }
+  
+  #search {
+    width: 180px;
+    height: 30px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 5px 0 15px 10px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  
+  #filter label {
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    letter-spacing: 0.2px;
+  }
+  
+  #filter-Manufacture {
+    height: 250px;
+    overflow: hidden auto;
+  }
+  
+  #filter-brand {
+    height: 250px;
+    overflow: hidden auto;
+  }
+  
+  /**=======================
+   * !      right division
+   * ! first section - image slidding.
+   *========================**/
+  
+  #imageSlider {
+    width: 98%;
+    height: 230px;
+    margin: 12px auto 20px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  #imageSlider>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  /**=======================
+   * !      shop catagory
+   *========================**/
+  
+  #shopCategory {
+    width: 98%;
+    height: 260px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 auto 20px;
+    padding-top: 0.3%;
+    padding-left: 0.5%;
+  }
+  
+  #shopCategory>h3 {
+    margin: 20px 3px;
+    color: rgba(21, 27, 57, 0.6);
+  }
+  
+  .shopItem {
+    height: 190px;
+    display: flex;
+    /* border: 1px solid black; */
+  }
+  
+  .shopItem>div {
+    width: 14%;
+    height: 170px;
+    margin: 0.75%;
+    text-align: center;
+    border: 1px solid rgba(112, 112, 112, 0.38);
+    border-radius: 10px;
+  }
+  
+  .shopItem>div>img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  span {
+    color: rgb(177, 214, 145);
+  }
+  
+  .shopItem>div>p {
+    margin: 0 13px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /**=======================
+   * !      Sorting division
+   *========================**/
+  
+  #sortingDiv {
+    width: 98%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    align-items: flex-end;
+    font-size: 20px;
+  }
+  
+  .buttonBox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+  
+  .sortbtn {
+    width: 100px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  
+  /* .sortbtn:nth-child(1) {
+    border: 1px solid rgb(36, 174, 177);
+    color: rgb(36, 174, 177);
+  } */
+  
+  .sortHover {
+    border: 1px solid rgb(36, 174, 177);
+    color: rgb(36, 174, 177);
+  }
+  
+  .sortbtn:hover {
+    border: 1px solid rgb(36, 174, 177);
+    color: rgb(36, 174, 177);
+  }
+  
+  /**=======================
+   * !      Products division
+   *========================**/
+  
+  #products1 {
+    width: 98%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin: 0px auto 20px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  #products1>h3 {
+    margin-left: 2%;
+    margin-bottom: 0.5%;
+    color: #6f7284;
+  }
+  
+  #second {
+    width: 98%;
+    /* height: 900px; */
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    padding: 1%;
+    gap: 1.2%;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+    background-color: white;
+  }
+  
+  .productCardCss {
+    height: 340px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    border: 1px solid rgba(112, 112, 112, 0.38);
+  }
+  
+  .discount {
+    width: 95%;
+    height: 15px;
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  .discount>.disc {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(132, 190, 82);
+  }
+  
+  .posterDivCss {
+    height: 50%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+  }
+  
+  .posterDivCss>img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    /* border: 1px solid black; */
+  }
+  
+  .textDivCss {
+    width: 90%;
+    /* height: 49%; */
+    margin: auto;
+    padding: 10px;
+    /* border: 1px solid black; */
+  }
+  
+  .textDivCss>p {
+    /* padding: 2px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px 0px 4px;
+  }
+  
+  .textDivCss>p:nth-child(1) {
+    font-weight: bold;
+  }
+  
+  .textDivCss>p:nth-child(2) {
+    color: #6f7284;
+  }
+  
+  del {
+    color: #6f7284;
+  }
+  
+  .textDivCss>button, .productBtn {
+    width: 85%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(36, 174, 177);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 19px;
+  }
+  
+  strong {
+    color: red;
+    font-size: 19px;
+  }
+  
+  /**=======================
+   * !      Product division 2
+   *  below information
+   *========================**/
+  
+  #products2 {
+    width: 98%;
+    padding-top: 1%;
+    padding-bottom: 7%;
+    margin: 0px auto 20px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  #inner {
+    width: 98%;
+    /* height: 900px; */
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    padding: 1%;
+    gap: 1.2%;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+    background-color: white;
+  }
+  
+  .productCardCss2 {
+    height: 340px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    border: 1px solid rgba(112, 112, 112, 0.38);
+  }

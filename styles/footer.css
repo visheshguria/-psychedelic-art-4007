@@ -41,7 +41,7 @@
     display: grid;
     grid-template-columns: 17% 17% 17% 17% 25%;
     gap: 2%;
-    
+    /* border: 1px solid red; */
 }
 .secondDiv>div:last-child{
     border-left: 1px solid lightgray;
@@ -67,7 +67,6 @@
     text-decoration: none;
     color: black;
     font-size: 12px;
-    
     font-family: 'Lato', sans-serif;
 }
 
@@ -123,6 +122,7 @@
     font-size: 11px;
     border-top: 1px solid lightgray;
     margin-top: 55px;
+   
 }
 .last>div{
     margin-top: 16px;
@@ -140,5 +140,6 @@
 }
 .last p{
     margin-top: 11px;
+    font-size: 12px;
     margin-left: 8px;
 }

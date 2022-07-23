@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/cart.css">
+
+</head>
+
+<body>
+  <div id="navbar">
+    <a href="index.html">
+      <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="netmeds">
+    </a>
+
+    <div id="search-bar">
+      <select name="" id="">
+        <option value="">Deliver to <span id="pin-code">110002</span></option>
+      </select>
+
+      <input type="text" placeholder="┊    Search for medicine and wellness products...">
+
+    </div>
+    <div id="right-data">
+      <div class="upper">
+        <i class='fas fa-file-upload' style="font-size:24px"></i>
+        <p id="upload">Upload</p>
+      </div>
+      <div class="upper">
+        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+        <p id="cart">cart</p>
+      </div>
+      <div class="upper">
+        <i class='fas fa-user-circle' style='font-size:24px'></i>
+        <p id="sign-in">sign in/sign up</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h2>Order Summary</h2>
+  <div id="main">
+
+    <div id="left">
+      <div id="sliding">
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1657031131_Web_Homesafsdf.jpg" alt="">
+          </div>
+          <div class="mySlides fade">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1658248429_Web_Home_title_1680X320.jpg"
+              alt="">
+          </div>
+          <div class="mySlides fade">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1656599543_Home_Bannersgge.jpg" alt="">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1656599646_Home_Bannervvvvv.jpg" alt="">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="dotdiv">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+      <table style="border: 1px;" style="background-color: white;">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Delete</th>
+            <th>TotalPrice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+                    <td><img src="https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg.plp" alt=""></td>
+                    <td>Name of ther product</td>
+                    <td>34394$</td>
+                    <td><button> -</button> <span> 0</span> <button>+</button></td>
+                    <td> <img src="https://media.istockphoto.com/vectors/garbage-bin-sign-vector-id1139466631?k=20&m=1139466631&s=612x612&w=0&h=F3hOMYdQTDn4NFEi94i9StIbDxJ1v7mX79lDxz1cXLk=" alt=""></td>
+                    <td>10$</td>
+                  </tr> -->
+
+        </tbody>
+
+      </table>
+
+      <div>
+
+      </div>
+      <h3 style="color: rgb(70, 69, 69);">MOST SELLING PRODUCTS</h3>
+      <div id="lastwala">
+        <a href="">
+          <img src="images/addb.png" alt="">
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- --------------------right hand side things-------------------------------------------------------------------------------------- -->
+
+
+    <div id="right">
+      <div id="member">
+        <a href=""><img src="images/memberer.png" alt=""></a>
+
+      </div>
+      <div id="coupooon" style="background-color: white;">
+        <p style="font-weight: 600; color:grey">Apply Promo Code</p>
+        <h4>Coupon: GRAND4K</h4>
+        <button id="button">Apply coupon code</button>
+        <p>Flat 30% off on you first order! voucher applicable in payments options.</p>
+      </div>
+      <div id="totalpage">
+        <h4 style="font-weight: 600; color:grey">PAYMENT DETAILS</h4>
+        <p>MRP Total <span id="MPR-total" style="padding-left: 170px;"> </span></p>
+        <p style="font-weight: 600;">Total Amount <span id="amp-total" style="padding-left: 145px; font-weight: 600;">
+          </span></p>
+        <div style="display: flex; justify-content:space-between;">
+          <div>
+            <h3>Total Amount</h3>
+            <h4 id="total"></h4>
+          </div>
+          <button id="proced">PROCEED</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+</body>
+
+</html>
+<script>
+  let pricese = 0;
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 }
+
+    if (n < 1) { slideIndex = slides.length }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+  }
+
+  setInterval(function () {
+
+    plusSlides(1);
+    // plusSlides(1);
+
+  }, 4000)
+
+  let addToCart = JSON.parse(localStorage.getItem('addToCart')) || [];
+  //   document.getElementById('productLength').innerText=addToCart.length;
+  function display(addToCart) {
+    document.querySelector('tbody').innerHTML = '';
+    addToCart.forEach(function (e, i) {
+      console.log("Deepak")
+      let tbody = document.querySelector('tbody');
+
+
+      let tr = document.createElement('tr');
+      let td = document.createElement('td');
+      let img = document.createElement('img');
+      img.setAttribute('src', e.img);
+      td.append(img);
+      let td1 = document.createElement('td');
+      td1.innerText = e.name;
+      let td2 = document.createElement('td');
+      td2.innerText = e.price;
+      let td3 = document.createElement('td');
+      let btn1 = document.createElement('button');
+      btn1.innerText = '-';
+      let span = document.createElement('span');
+      span.innerText = '1';
+      let btn2 = document.createElement('button');
+      btn2.innerText = '+';
+      td3.append(btn1, span, btn2);
+      let td4 = document.createElement('td');
+      let img2 = document.createElement('img');
+      img2.setAttribute('src', 'https://media.istockphoto.com/vectors/garbage-bin-sign-vector-id1139466631?k=20&m=1139466631&s=612x612&w=0&h=F3hOMYdQTDn4NFEi94i9StIbDxJ1v7mX79lDxz1cXLk=')
+      td4.appendChild(img2);
+      img2.addEventListener('click', function () {
+        deleteProduct(e, i)
+      })
+      let priced = Math.trunc(e.price)
+      console.log(priced)
+      let td5 = document.createElement('td');
+      td5.innerText = priced;
+
+
+      tr.append(td, td1, td2, td3, td4, td5);
+      tbody.appendChild(tr);
+      btn2.addEventListener('click', function () {
+        let acutal = e.price;
+        productQuantityPlus(span, td5, acutal)
+      })
+      btn1.addEventListener('click', function () {
+        let acutal = e.price;
+        productQuantityMinus(span, td5, acutal)
+      })
+
+    })
+  }
+  // delete Product Page 
+  function deleteProduct(e, i) {
+    addToCart.splice(i, 1);
+    localStorage.setItem('addToCart', JSON.stringify(addToCart));
+    display(addToCart)
+    window.location.reload();
+  }
+  // increase Product quantity 
+  let dataArray = [];
+  let latestArray = [];
+  function productQuantityPlus(span, price, acutalPrice) {
+    latestArray = dataArray;
+    dataArray = [];
+    let count = +span.innerText;
+    let acutalData = +acutalPrice;
+    count++;
+    span.innerText = count;
+    let prices = count * acutalData;
+    price.innerText = prices;
+    dataArray.push(prices);
+    console.log(prices, count);
+    total();
+  }
+  // decrease product quantity 
+  function productQuantityMinus(span, price, acutalPrice) {
+    let currentPrice = +price.innerText;
+    let acutalData = +acutalPrice;
+    let count = +span.innerText;
+    if (count == 1) {
+      count = 1;
+      span.innerText = count;
+    }
+    else {
+      count--;
+      span.innerText = count;
+    }
+    if (currentPrice == acutalData) {
+      price.innerText = acutalData;
+    }
+    else {
+      price.innerText = currentPrice - acutalData;
+    }
+    total();
+
+    // console.log(currentPrice);
+
+  }
+
+  // put the total pize of the product 
+  function total() {
+    // console.log('hello')
+    let totalData = document.querySelectorAll('tbody td:last-child');
+    let totalPrice = 0;
+
+    let priceTag = document.getElementById('total')
+    let priceTagi = document.getElementById('amp-total')
+    let priceTagii = document.getElementById('MPR-total')
+
+    totalData.forEach(function (e) {
+
+      // console.log(priceTag)
+      let data = +e.innerText
+      console.log(e.innerText);
+      totalPrice += data;
+      pricese = totalPrice;
+      let add = "Rs." + totalPrice
+      priceTag.innerText = totalPrice;
+      priceTagi.innerText = add;
+      priceTagii.innerText = add;
+
+    })
+
+  }
+
+
+
+  display(addToCart);
+  total();
+  // apply cuupon code
+  document.querySelector('#button').addEventListener('click', applyCupponCode);
+  console.log("hello")
+  function applyCupponCode() {
+    let totals;
+    let totalData = +document.querySelector('#total').innerText;
+    // console.log(totalData)
+    console.log("complete")
+    totals = (totalData / 100) * 70;
+    document.querySelector('#total').innerText = totals;
+    alert("coupon code applied!!!!")
+
+
+  }
+  // // payment gatway 
+  // document.getElementById('payment').addEventListener('click', function () {
+  //   let cardNumber = '123456789';
+  //   let date = '2027-01';
+  //   let cvv = '123';
+  //   let inputDate = document.getElementById('month').value;
+  //   let inputCard = document.getElementById('number').value;
+  //   let inputCvv = document.getElementById('cvv').value;
+  //   if (inputCard == cardNumber && inputDate == date && cvv == inputCvv) {
+  //     window.location.href = 'otp.html';
+  //   }
+  //   else {
+  //     alert('Wrong Details')
+  //   }
+  //   console.log(inputDate)
+
+
+  // })
+  // let boodata = JSON.parse(localStorage.getItem("loginDetail")) || [];
+  // if (boodata.length > 0) {
+  //   document.querySelector("#sign-in").innerText = boodata[0].email;
+  // } else {
+  //   document.querySelector("#sign-in").innerText = "sign-in";
+  // }
+  document.querySelector("#proced").addEventListener("click", mycli);
+
+  function mycli() {
+    let paisa = document.querySelector("#total").innerText;
+    let obb = [{
+      totalprice: paisa,
+    }];
+    localStorage.setItem('totalprice', JSON.stringify(obb));
+    window.location.href = "payment.html"
+  }
+
+
+</script>

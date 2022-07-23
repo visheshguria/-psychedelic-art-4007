@@ -9,6 +9,7 @@ const arr = [
 
 let imageSlider = document.getElementById("imageSlider");
 let img = document.createElement("img");
+
 img.src = arr[0];
 imageSlider.append(img);
 

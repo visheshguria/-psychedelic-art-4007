@@ -1,0 +1,125 @@
+body{
+    background-color: #f6f6f7;
+  
+ 
+    font-family: 'Roboto', sans-serif;
+  
+}
+.container{
+    display: flex;
+    gap:30px;
+    width:75%;
+    margin:auto;
+}
+#userDetails{
+    display: flex;
+    height:145px;
+    width:100%;
+    gap:30px;
+}
+#userName{
+    display: flex;
+    gap:30px;
+    height:124px;
+    width:420px;
+    border-radius: 8px;
+    background-color: white;
+
+}
+#userReward{
+    width:900px;
+    height:124px;
+    border-radius: 8px;
+    background-color: white;
+
+}
+#userReward>div{
+    display: flex;
+    margin: auto;
+    width:420px;
+    justify-content: space-between;
+    height:100px;
+    align-items: center;
+    margin-top: 17px;
+}
+.fixitems{
+   
+    text-align: center;
+}
+p{
+    font-size: 13px;
+    margin-top: 10px;
+}
+#userimage{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    margin: 30px 0px 0px 20px;
+}
+#userName>div>p{
+    margin-top: -10px;
+    color: #b1b2b2;
+}
+#userSetting{
+    height:820px;
+    width:290px;
+    border-radius: 8px;
+    background-color: white;
+    padding:10px;
+    padding-top: 10px;
+}
+.setting{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height:34px;
+    width:34px;
+    border-radius: 50%;
+   
+}
+pre{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  
+}
+hr{
+    width:221px;
+    margin-left:58px;
+    border-top:  #a9a9a9;
+}
+#allDetails{
+    display: flex;
+    height:335px;
+    width:66%;
+    border-radius: 8px;
+    background-color: white;
+
+}
+#allDetails>div{
+    height:300px;
+    width:43%;
+    margin-left: 29px;
+    margin-top: 15px;
+}
+.HR{
+    margin-left:0px;
+    margin-bottom: 20px;
+    margin-top:-13px;
+    border-top:#b1b2b2 ;
+}
+.title{
+    color: #24b1c5;
+    font-weight: 500;
+}
+.title+p{
+    font-size: 15px;
+}
+.tag{
+    color:#878481;
+    font-size: 15px;
+}
+
+

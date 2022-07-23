@@ -9,16 +9,114 @@
     <title>Beauty</title>
     <link rel="icon" href="images/netmeds.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/beauty.css">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
-    <link rel="shortcut icon"
-    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
     type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLXz6HPn0zs4wxAyVBUNGwmXOOc_Ls0MNhw&usqp=CAU"
+        type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+
+    <link rel="stylesheet" href="styles/nav1.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
+  <div id="navbar">
+    <a href="index.html">
+        <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="netmeds">
+    </a>
+    <div id="search-bar">
+        <select name="" id="" title="Delivery">
+            <option value="">Deliver to <span id="pin-code">110002</span></option>
+        </select>
+        <input type="text" placeholder="┊    Search for medicine and wellness products...">
+
+    </div>
+    <div id="right-data">
+        <div id="upr1" class="upper" >
+            <i class='fas fa-file-upload' style="font-size:24px"></i>
+            <p id="upload">Upload</p>
+        </div>
+        <div id="upr2" class="upper" >
+            <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+            <p id="cart">cart</p>
+        </div>
+        <div id="upr3" class="upper" >
+            <i class='fas fa-user-circle' style='font-size:24px'></i>
+            <p id="sign-in">sign in/sign up</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="sec-nav">
+    <div class="dropdown">
+        <img src="images/medi.png" alt="">
+        <button class="dropbtn">Medicine</button>
+        <div class="dropdown-content">
+            <a href="#">All Medicines</a>
+            <a href="#">Previously Ordered Products</a>
+        </div>
+    </div>
+    <div class="nav-item">
+        <img src="images/wellness.png" alt="2">
+        <p id="myWell">Wellness</p>
+    </div>
+    <div class="nav-item">
+        <img src="images/lab.png" alt="3">
+        <p id="myLab">Lab Tests</p>
+    </div>
+    <div class="dropdown">
+        <img src="images/beau.png" alt="">
+        <button class="dropbtn">Beauty</button>
+        <div class="dropdown-content">
+            <a href="#">Personal Care</a>
+            <a href="#">Makeup</a>
+            <a href="#">Hair</a>
+            <a href="#">Skins</a>
+            <a href="#">Tools & Appliances</a>
+            <a href="#">Mom and Baby</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <img src="Images/health.png" alt="">
+        <button class="dropbtn">Health Corner</button>
+        <div class="dropdown-content">
+            <a href="#">Health Library</a>
+            <a href="#">PatienceAlike</a>
+            <a href="#">Corona Awareness</a>
+        </div>
+    </div>
+</div>
+<div id="third-nav">
+    <p>COVID Essentials</p>
+    <p>Diabetes</p>
+    <p>Eyewear</p>
+    <p>Ayush</p>
+    <p>Ayurvedic</p>
+    <p>Homeopathy</p>
+    <p>Fitness</p>
+    <p>Mom & Baby</p>
+    <p>Devices</p>
+    <p>Surgicals</p>
+    <p>Sexual Wellness</p>
+    <p>Treatments</p>
+</div>
+
+ 
+
+
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -57,6 +155,7 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
   </div>
    <div id="spot">
     <h2 class="Spot">In the Spotlight</h2>
@@ -265,43 +364,152 @@
   </div>
  </div>
 
- <div id="latestBeauty">
-      
-        <h2 class="latest">The Latest In Beauty</h2>
-        <h3 id="LtestestViewAll"> View All <span> > </span></h3>
-   
- </div>
+ <div id="div14">
+  <section id="explore-beauty-section3">
+      <div>
+          <h2>Health Library</h2>
+          <p >View all > </p>
 
- <div id="Latest">
-  <div>
-    <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1658233510_Ayurvedic-Indications_480x180.jpg" alt="" srcset="">
-    <p class="latesttilte">Prabhakar Vati: Uses, Health Benefits, Ayurvedic I..</p>
-  </div>
-  <div>
-    <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1658233877_Polyhydroxy-acids_480x180.jpg" alt="" srcset="">
-    <p class="latesttilte">What Are Polyhydroxy acids (PHAs): Uses, Types, Be..</p>
-  </div>
-  <div>
-    <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1658234026_Radionuclide-Scintigraphy_480x180.jpg" alt="" srcset="">
-    <p class="latesttilte">Radionuclide Scintigraphy: Procedure, Risks And Re..</p>
-    
-  </div>
-  <div>
-    <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1658139045_Red-Sandalwood_480x180.jpg" alt="" srcset="">
-    <p class="latesttilte"> Sandalwood: Uses, Health Benefits, Formulation..</p>
-    
-  </div>
+      </div>
+      <div>
+          <section class="explore-section flex">
+              <div class="explore-box">
+                  <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/Shankhpushpi_Featured_480x180.jpg" alt="">
+                  <p>Shankhpushpi: Benefits, Uses, Dosage...</p>
+              </div>
+              <div class="explore-box">
+                  <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1658395654_Fibre-Filled-Pearly-Peas_480x180.jpg" alt="">
+                  <p>Kala Vatana: Bite Into These Relishing Fibrous Pea...</p>
+              </div>
+              <div class="explore-box">
+                  <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1658395714_Mango-For-Beauty_480x180.jpg" alt="">
+                  <p>Mango For Beauty: Pamper Your Skin With This Deli...</p>
+              </div>
+              <div class="explore-box">
+                  <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1658395799_Pulmonary-Hypertension_480x180.jpg" alt="">
+                  <p>Pulmonary Hypertension: Causes, Symptoms And Tre...</p>
+              </div>
+          </section>
+      </div>
+  </section>
+</div>
+
+
 
  </div>
- <div class="NearFooter">
- <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="" srcset="">
- <p>Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha & Company – one of India’s most trusted pharmacies, 
-  with over 100 years’ experience in dispensing quality medicines.</p>
- </div>
+ <footer id="footer">
+  <div class="firstDiv">
+      <div class="f_logo">
+          <a href="index.html"><img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg"
+                  alt="Logo" /></a>
+      </div>
+      <div>
+          <p>
+              Netmeds.com, India Ki Pharmacy, is brought to you by the Dadha &
+              Company – one of India’s most trusted <br />
+              pharmacies, with over 100 years’ experience in dispensing quality
+              medicines.
+          </p>
+      </div>
+  </div>
+
+  <div class="secondDiv">
+      <div>
+          <h5>COMPANY</h5>
+          <ul>
+              <li><a href="#">About Netmeds</a></li>
+              <li><a href="#">Customers Speak</a></li>
+              <li><a href="#">In the News</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div>
+          <h5>SHOPPING</h5>
+          <ul>
+              <li><a href="#">Browse by A-Z</a></li>
+              <li><a href="#">Browse by Manufactures</a></li>
+              <li><a href="#">Health Articles</a></li>
+              <li><a href="#">Offers / Coupons</a></li>
+              <li><a href="#">FAQs</a></li>
+          </ul>
+      </div>
+      <div>
+          <h5>CATEGORIES</h5>
+          <ul>
+              <li><a href="#">Ayush</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">Family Care</a></li>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Personal Care</a></li>
+              <li><a href="#">Treatments</a></li>
+          </ul>
+      </div>
+      <div>
+          <h5>SOCIAL</h5>
+          <ul>
+              <li><a href="https://www.netmeds.com/patientsalike">Patients Alike</a></li>
+              <li><a href="https://www.facebook.com/NetMeds/">Facebook</a></li>
+              <li><a href="https://twitter.com/NetMeds">Twitter</a></li>
+              <li><a
+                      href="https://www.linkedin.com/company/netmeds-marketplace-limited?originalSubdomain=in">LinkedIn</a>
+              </li>
+              <li><a href="https://www.youtube.com/channel/UCNuPx810akEPrbwAUpdNPyw">YouTube</a></li>
+              <li><a href="https://www.netmeds.com/refer-earn">Refer & Earn</a></li>
+          </ul>
+      </div>
+      <div>
+          <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+          <p>
+              Get a free subscription to our health and fitness tip and stay tuned
+              to our latest offers
+          </p>
+          <div>
+              <input type="email" placeholder="Enter your email address" />
+              <button>
+                  <img src="/Images/f_btnIcon.png" alt="" class="invert" />
+              </button>
+          </div>
+          <div class="f_icon">
+              <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="" />
+              <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="" />
+          </div>
+          <h6><a href="#">Download App</a></h6>
+      </div>
+  </div>
+
+  <div class="last">
+      <div>
+          <img src="Images/navIcon.png" alt="" />
+          <p>Medicine</p>
+      </div>
+      <div>
+          <img src="Images/navIcon.png" alt="" />
+          <p>Wellness</p>
+      </div>
+      <div>
+          <img src="Images/navIcon.png" alt="" />
+          <p>Lab Test</p>
+      </div>
+      <div>
+          <img src="Images/navIcon.png" alt="" />
+          <p>Beauty</p>
+      </div>
+      <div>Copyright© 2021 Netmeds Marketplace Ltd.</div>
+  </div>
+</footer>
   </body>
 </html>
- <script src="./scripts/beauty.js"></script>
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="./scripts/beauty.js"></script>
+<script src="./scripts/navbar.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 
  <script>
   var swiper = new Swiper(".mySwiper", {

@@ -1,4 +1,4 @@
-let pricese=0;
+// let pricese=0;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -37,6 +37,9 @@ setInterval(function () {
   // plusSlides(1);
 
 }, 4000)
+
+
+
 
 let addToCart = JSON.parse(localStorage.getItem('addToCart')) || [];
 //   document.getElementById('productLength').innerText=addToCart.length;

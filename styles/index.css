@@ -585,6 +585,7 @@ body {
     /* border: solid red; */
     color:white;
     margin-bottom: 100px;;
+    display:flex
 }
 #explore-beauty-section3>div:first-child{
     display:flex;

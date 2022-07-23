@@ -139,6 +139,9 @@ body {
 }
 
 
+/* div3 starts 88888888888888888888888 */
+
+
 #div3{
     margin: auto;
     padding: 10px 10px;
@@ -405,6 +408,10 @@ body {
     justify-content: space-between;
     padding: 0px 30px;
 }
+#explore-beauty-section1>div:first-child>p{
+    cursor:pointer;
+  }
+
 
 .explore-section>div {
     /* border: 2px solid black; */
@@ -442,6 +449,10 @@ body {
     justify-content: space-between;
     padding: 0px 30px;
 }
+#explore-beauty-section2>div:first-child>p{
+    cursor:pointer;
+  }
+
 
 .explore-section>div {
     /* border: 2px solid black; */
@@ -603,6 +614,10 @@ body {
     font-weight: bolder;
     
 }
+
+#explore-beauty-section3>div:first-child>p{
+    cursor:pointer;
+  }
 
 
 

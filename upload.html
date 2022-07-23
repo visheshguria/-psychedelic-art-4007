@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/upload.css"/>
+</head>
+<body>
+    <div id="navbarr">
+        <img src="https://www.netmeds.com/msassets/home-logo-netmeds-new.svg">
+    </div>
+    <h2>Attach Prescription</h2>
+    <div id="container">
+        <div id="uploadprescription">
+            <div id="prescription">
+             <span>UPLOAD</span>
+             <p>Valid Priscription?</p>
+            </div>
+            <p>Please upload images of valid prescription from your doctor.</p>
+            <div id="uploadImage">
+              
+                    <div class="img-upload" onclick="addImage()">
+                         <input type="file" id="file-upload">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmq_gfF3cc-avkeX0MQhPES_2sFYOL_QUkkw&usqp=CAU" alt="Click to upload" id="img-preview">
+                         <h3 class="uploaded-photo">Upload images</h3>
+                     </div> 
+               
+            </div>
+        </div>
+        <div id="uploadprescription2">
+            <div id="dcoctorcall">
+                <span>ORDER INFO</span>
+                <p>Select how do you want to proceed with the order.</p>
+                <div class="orderoption">
+                    <div>
+                        <img id="orderimage" src="https://www.netmeds.com/msassets/images/icons/doctor_inactive.svg">
+                    </div>
+                    <div>
+                        <span id="color">Search and Add medicines    <input type="checkbox" > </span>
+                       
+                        <span >Manually search and add medicines in the cart</span>
+                    </div>
+                   
+                </div>
+                <hr>
+                <div class="orderoption">
+                    <div>
+                        <img id="orderimage" src="https://www.netmeds.com/msassets/images/icons/call_active.svg">
+                    </div>
+                    <div>
+                        <p id="color">Get call from Netmeds  <input type="checkbox" ></p>
+                        <span >Netmeds pharmacist/doctors will call to confirm medicines</span>
+                    </div>
+
+                </div>
+            </div>
+            <button>CONTINUE</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="scripts/upload.js"></script>

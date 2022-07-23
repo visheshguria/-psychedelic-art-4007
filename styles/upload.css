@@ -1,0 +1,124 @@
+body{
+    background-color: 
+    #f6f6f7;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-size: 14.5px;
+}
+#navbarr{
+    background-color: #24aeb1;
+    height: 90px;
+    width: 100%;
+}
+*{
+    margin:0px;
+}
+img{
+    height:60px;
+    width:160px;
+    margin-left: 70px;
+    margin-top: 16px;
+}
+h2{
+    margin-left: 190px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#container{
+    display: flex;
+    gap:30px;
+    width:77%;
+    height:440px;
+  
+    margin: auto;
+}
+#uploadprescription{
+    height:210px;
+    width:64%;
+    padding:20px;
+  
+    border-radius: 8px;
+    background-color: white;
+}
+#prescription{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#prescription>span{
+    color:#a9a9a9;
+}
+#prescription>p{
+    color:red;
+}
+#uploadprescription2{
+    height:400px;
+    width:30%;
+   
+   
+}
+#dcoctorcall{
+    height:260px;
+    width:86%;
+    padding:20px;
+    border-radius: 8px;
+    background-color: white;
+   
+}
+#dcoctorcall>p{
+    margin-top: 20px;
+}
+#dcoctorcall>span{
+    color:#a9a9a9;
+}
+.orderoption{
+    display: flex;
+    gap:12px;
+    margin-top: 30px;
+}
+#orderimage{
+    height:18px;
+    width:20px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+#color{
+    margin-bottom: 10px;
+}
+#color+span{
+    font-size: 11px;
+    color:#b1b2b2;
+}
+hr{
+    margin-top: 10px;
+    width:240px;
+    margin-left: 30px;
+}
+button{
+    width:312px;
+    border-radius: 4px;
+    height:40px;
+    margin-top: 20px;
+    background-color: #425ae6;
+    border:none;
+    color:white;
+}
+#file-upload{
+    display: none;
+}
+.uploaded-photo{
+    margin-left:85px;
+}
+#uploadImage{
+    margin: auto;
+    width:42%;
+}
+input{
+    margin-left: 20px;
+}
+.img-upload{
+    cursor: pointer;
+}

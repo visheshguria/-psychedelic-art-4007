@@ -1,0 +1,33 @@
+#reward{
+    height:400px;
+    width:655px;
+    text-align: center;
+    padding-top: 90px;
+    
+}
+#backtohome{
+    background-color: #24aeb1;
+    color:white;
+    width:270px;
+    height: 43px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.answer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.answer1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+   padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+#orderhistory{
+    height:25px;
+    width:655px;
+    text-align: center;
+    padding-top: 90px;
+}

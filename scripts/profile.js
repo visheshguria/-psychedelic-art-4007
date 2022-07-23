@@ -66,7 +66,7 @@ off.addEventListener("click",()=>{
   
   function deleteProduct()
   {
-   console.log("jhj")
+   
      localStorage.removeItem("loginDetails");
      window.location.reload();
      window.location.href="index.html"

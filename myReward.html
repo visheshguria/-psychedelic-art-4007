@@ -10,14 +10,211 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300&family=Roboto+Mono&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/myreward.css">
+    <link rel="stylesheet" href="styles/nav1.css">
 </head>
 <body>
-    <div id="append"></div>
+    <div id="navbar">
+        <a href="index.html">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="netmeds">
+        </a>
+        <div id="search-bar">
+            <select name="" id="" title="Delivery">
+                <option value="">Deliver to <span id="pin-code">110002</span></option>
+            </select>
+            <input type="text" placeholder="┊    Search for medicine and wellness products...">
+
+        </div>
+        <div id="right-data">
+            <div id="upr1" class="upper" >
+                <i class='fas fa-file-upload' style="font-size:24px"></i>
+                <p id="upload">Upload</p>
+            </div>
+            <div id="upr2" class="upper" >
+                <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+                <p id="cart">cart</p>
+            </div>
+            <div id="upr3" class="upper" >
+                <i class='fas fa-user-circle' style='font-size:24px'></i>
+                <p id="sign-in">sign in/sign up</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="sec-nav">
+        <div class="dropdown">
+            <img src="images/medi.png" alt="">
+            <button class="dropbtn">Medicine</button>
+            <div class="dropdown-content">
+                <a href="#">All Medicines</a>
+                <a href="#">Previously Ordered Products</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <img src="images/wellness.png" alt="2">
+            <p id="myWell">Wellness</p>
+        </div>
+        <div class="nav-item">
+            <img src="images/lab.png" alt="3">
+            <p id="myLab">Lab Tests</p>
+        </div>
+        <div class="dropdown">
+            <img src="images/beau.png" alt="">
+            <button class="dropbtn">Beauty</button>
+            <div class="dropdown-content">
+                <a href="#">Personal Care</a>
+                <a href="#">Makeup</a>
+                <a href="#">Hair</a>
+                <a href="#">Skins</a>
+                <a href="#">Tools & Appliances</a>
+                <a href="#">Mom and Baby</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <img src="Images/health.png" alt="">
+            <button class="dropbtn">Health Corner</button>
+            <div class="dropdown-content">
+                <a href="#">Health Library</a>
+                <a href="#">PatienceAlike</a>
+                <a href="#">Corona Awareness</a>
+            </div>
+        </div>
+    </div>
+    <div id="third-nav">
+        <p>COVID Essentials</p>
+        <p>Diabetes</p>
+        <p>Eyewear</p>
+        <p>Ayush</p>
+        <p>Ayurvedic</p>
+        <p>Homeopathy</p>
+        <p>Fitness</p>
+        <p>Mom & Baby</p>
+        <p>Devices</p>
+        <p>Surgicals</p>
+        <p>Sexual Wellness</p>
+        <p>Treatments</p>
+    </div>
+    <h2 id="accountname">Your Account</h2> 
+    <div class="container">
+  
+        <div id="userDetails">
+            <div id="userName">
+                <div>
+                    <img id="userimage" src="https://www.netmeds.com/msassets/images/icons/account_information_blue.svg">
+                </div>
+                <div>
+                    <h2 class="name"></h2>
+                    <p class="email"></p>
+                    <p class="mobile"></p>
+                </div>
+            </div>
+            <div id="userReward">
+                <div  >
+                <div class="fixitems" id="payment">
+                    <img src="https://www.netmeds.com/msassets/images/icons/payment_history.svg">
+                    <p>Payment Methods</p>
+                </div>
+                <div class="fixitems" id="medicineorder">
+                    <img src="https://www.netmeds.com/msassets/images/icons/medicine_orders.svg">
+                    <p>Medicine Orders</p>
+                </div>
+                <div class="fixitems" id="getreward">
+                    <img src="https://www.netmeds.com/msassets/images/icons/rewards.svg">
+                    <p>My Rewards</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+ <div class="container">
+    <div id="userSetting">
+        <div class="setting" id="accountinformation">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/account_information_blue.svg">
+            <pre>Account Information                   >      </pre>
+            
+        </div>
+         <hr>
+         <div class="setting" id="wallet">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/wallet_grey.svg">
+            <pre>My Wallet                                       >       </pre>
+            
+        </div>
+         <hr>
+         <div class="setting" id="wishlist">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/favorite.svg">
+            <pre>MY Wishlist                                  >       </pre>
+            
+        </div>
+         <hr>
+         <div class="setting" id="offerzone">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/offer_inactive.svg">
+            <pre>Offers                                            >       </pre>
+            
+        </div>
+         <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/netmeds-elite_inactive.svg">
+            <pre>Netmeds First                             >        </pre>
+            
+        </div>
+         <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/delivery_inactive.svg">
+            <pre>Delivery Addresses                     >         </pre>
+            
+        </div>
+         <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/subscription_grey.svg">
+            <pre>My Subscription                          >         </pre>
+            
+        </div>
+        <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/my-prescription_inactive.svg">
+            <pre>Refer & Earns                             >        </pre>
+            
+        </div>
+         <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/subscription_grey.svg">
+            <pre>Help?                                            >        </pre>
+            
+        </div>
+         <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/document_inactive.svg">
+            <pre>Legal Information                     >        </pre>
+            
+        </div>
+         <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/contact-us_grey.svg">
+            <pre>Contact Us                                  >         </pre>
+            
+        </div>
+         <hr>
+         <div class="setting">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/document_inactive.svg">
+            <pre>Rate Us                                    >         </pre>
+            
+        </div>
+         <hr>
+         <div class="setting" id="logout">
+            <img class="image" src="https://www.netmeds.com/msassets/images/icons/lock_grey.svg">
+            <pre>Logout                                         >          </pre>
+            
+        </div>
+        
+    </div>
     <div id="reward">
    <img src="https://www.netmeds.com/msassets/images/icons/empty-rewards.svg">
    <p class="answer">Oops! There are no rewards for you yet.</p>
-   <button>BACK TO HOME</button>
+   <button id="backtohome">BACK TO HOME</button>
 </div>
 </body>
 </html>
-<script src="scripts/myreward.js"  type="module"></script>
+<script src="scripts/myreward.js"  ></script>

@@ -65,7 +65,7 @@ p{
 }
 #userSetting{
     height:820px;
-    width:30%;
+    width:29%;
     border-radius: 8px;
     background-color: white;
     padding:10px;
@@ -96,7 +96,7 @@ hr{
 #allDetails{
     display: flex;
     height:335px;
-    width:60%;
+    width:68%;
     border-radius: 8px;
     background-color: white;
 

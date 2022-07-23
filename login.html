@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLXz6HPn0zs4wxAyVBUNGwmXOOc_Ls0MNhw&usqp=CAU" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        
+        body{
+            margin: auto 0;
+            padding: auto 0;
+            background-color: #f6f6f7;
+        }
+        #main{
+            margin-top: 70px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+            margin-left: 10%;
+            border-radius: 10px;
+        }
+        #form{
+            margin-top: 30px;
+        }
+        #form>label{
+            top: 30px;
+            font: 30px;
+            color: rgb(63, 132, 132);
+        }
+        #form input{
+            width: 70%;
+            margin-bottom: 20px;
+            height: 20px;
+        }
+        button{
+            width: 50%;
+            margin-left: 10%;
+            height: 40px;
+            font-size: 20px;
+            color: white;
+            background-color: #24aeb1;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+        button:hover{
+            color: #24aeb1;
+            background-color: white;
+            border: 1px solid #24aeb1;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="main">
+        <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" alt="">
+        <div id="form">
+            <h1>Sign In / Sign Up</h1>
+            <p>Sign up or Sign in to access your orders, special offers,<br> health tips and more!</p>
+            <br>
+            <label for="">EMAIL ADDRESS</label><br>
+            <input type="email" name="" id="email"><br>
+            <label for="">ENTER PASSWORD</label><br>
+            <input type="password" name="" id="password"><br>
+            <button id="log_in">Log-in</button><br>
+        </div>
+            
+        
+    </div>
+
+</body>
+</html>
+<script src="/scripts/login.js" type="module"></script>

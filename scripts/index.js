@@ -99,6 +99,15 @@ setInterval(function () {
 
 // body refrences 
 
+//div3 
+
+document.querySelector("#beautyref1").addEventListener("click", ()=>{
+    window.location.href= "beauty.html";
+})
+document.querySelector("#beautyref2").addEventListener("click", ()=>{
+    window.location.href= "beauty.html";
+})
+
 //category refrences
 //div 5, 8
 
@@ -131,6 +140,8 @@ document.querySelector("#div11>div:first-child>p").addEventListener("click", ()=
 document.querySelector("#div12>div:first-child>p").addEventListener("click", ()=>{
     window.location.href= "https://www.netmeds.com/non-prescriptions/men-s-grooming";
 })
+
+
 //div 14
 
 document.querySelector("#explore-beauty-section3>div:first-child>p").addEventListener("click", ()=>{
@@ -224,7 +235,11 @@ data5.map(function(ele){
     img1.setAttribute("id","b5-img")
     img1.setAttribute("src",ele.img)
     var h3=document.createElement("h3")
-    h3.textContent=ele.name
+    h3.textContent=ele.name;
+
+    div1.addEventListener("click",()=>{
+        window.location.href="health_library.html"
+    })
    
     div1.append(img1,h3)
     document.querySelector("#div13").append(div1);

@@ -1,0 +1,566 @@
+
+a
+{
+
+    text-decoration: none;
+    margin-top: 10px;
+    color: #17181d;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+a+span
+{
+    color: #0b7e81;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 3px; 
+}
+#health
+{
+    margin-left: 90px;
+    margin-top: 50px;
+}
+.hea{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404d4d;
+}
+#tagAndSearchOption
+{
+    display: flex;
+}
+
+.bu
+{
+    margin-top: 0px;
+    margin-left: 80px;
+    width: 60%;
+    /* border: 1px solid red; */
+    
+}
+.bu>button
+{
+    margin: 5px;
+    width: 8%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.bu>button:nth-child(1)
+{
+
+    width: 7%;
+}
+.bu>button:nth-child(2)
+{
+
+    width: 10%;
+}
+.bu>button:nth-child(3)
+{
+    width: 17%;
+}
+.bu>button:nth-child(5)
+{
+    width: 10%;
+}
+.bu>button:nth-child(6)
+{
+    width: 13%;
+}
+.bu>button:nth-child(7)
+{
+    width: 11%;
+}
+#tagAndSearchOption>div+div
+{
+    width: 23%;
+    height: 37px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: 1px solid #e0e0e0;
+    color: #5c19ef;
+    position: static;
+    margin-top: 5px;
+    margin-bottom:10px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+}
+.searcbar>input{
+    width: 106%;
+    height: 120%;
+    outline: none;
+    border: none;
+    padding: 8px 0px 10px 0px;
+    margin-top: -7px;
+
+}
+.searcbar
+{
+    display: flex;
+}
+.action-search
+{
+    width: 22px;
+    height: 40px;
+    background: url('https://www.netmeds.com/assets/version1657888943/gloryweb/images/icons/search-blue-icon.svg') no-repeat center center;
+     cursor: pointer;
+    box-shadow: none;
+    margin-top: -20px;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+}
+#container
+{
+    width: 82%;
+    margin: auto;
+    height: 87vh;
+    /* border: 1px solid  blue; */
+    margin-left: 90px;
+    display: flex;
+    gap: 20px;
+}
+#container> #conta-Div
+{
+    width: 77%;
+    height: 87vh;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 10px;
+  
+}
+#conta-Div>div:first-child
+{
+width: 50%;
+height: 86vh;
+border-radius: 10px 10px 0px 0px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+cursor: pointer;
+
+}
+#conta-Div>div>img{
+    width: 100%;
+    height: 50vh;
+    border-radius:10px 10px 0px 0px;
+}
+#conta-Div>div>img+h2{
+   padding: 5px;
+   margin: 0px 3px 0px 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 68px;
+    overflow: hidden;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    color: #151b39;
+}
+#conta-Div>div>img+h2+p{
+    margin-top: 1px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: .15px;
+    color: rgba(21,27,57,.6);
+    height: 140px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.TwoColum
+{
+    display: grid;
+    width: 65%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.TwoColum>div
+{
+    
+    height:42vh;
+    /* border: 1px solid black; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+   
+}
+
+.TwoColum>div>img
+{
+    width: 100%;
+    height: 160px;
+    border-radius: 7px;
+    margin: 2px;
+}
+.twoH2
+{
+   margin-top: -5px;
+   padding: 3px;
+    font-size: 18px;
+    height: 62px;
+    overflow: hidden;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #151b39;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.twoP{
+    margin-top: -30px;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(21,27,57,.6);
+    height: 52px;
+    overflow: hidden;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#RightBar
+{
+    width: 30%;
+    height: 85vh;
+    /* border: 2px solid gold; */
+    margin-left: 18px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+    
+}
+.headCat{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: rgba(21,27,57,.6);
+    margin-bottom: 8px;
+    margin: 20px 0px 0px 20px;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    margin: 10px 0px 10px 18px;
+}
+ul>li{
+    padding: 3px;
+}
+ul>li:last-child()
+{
+    font-size: 20px;
+}
+ul li a{
+
+    color: rgba(21,27,57,.6);
+   
+}
+ul>a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    color: #0b7e81;
+}
+.makemost
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #6f7284;
+    padding: 2px;
+    letter-spacing: 1px;
+  
+}
+#netMedsVideo
+{
+ width: 100%;
+margin-top: 20px;
+ height: 80vh;
+/* border: 2px solid black; */
+ background-color: rgb(238,238,238);
+}
+#netMedsVideo > #innerSection
+{
+    max-width: 1050px;
+  /* border: 1px solid red; */
+  height: 73vh;
+  margin: auto;
+    box-sizing: border-box;
+   margin-left: 85px;
+   margin-top: 20px;
+ 
+}
+#netMedsVideo > #innerSection h2 span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  padding: 3px;
+  font-weight: 100;
+    color: rgb(75,98,123);
+    letter-spacing: 1px;
+}
+.Benifits
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 0 8px;
+    padding: 16px 16px 0;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #151b39;
+    max-height: 68px;
+    overflow: hidden;
+}
+.Benifits+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    margin: 0;
+    padding: 0 16px;
+    letter-spacing: normal;
+    color: rgba(21,27,57,.6);
+}
+#netMedsVideo > #innerSection p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    margin: 0;
+    padding: 0 16px;
+    letter-spacing: normal;
+    color: rgba(21,27,57,.6);
+}
+#netMedsVideo > #innerSection small
+{
+    font-size: 13px;
+    font-family: Lato;
+    letter-spacing: 0;
+   margin-left: 5px;
+    color: rgba(21,27,57,.6);
+}
+
+
+#videoDiv
+{
+    width: 100%;
+    height: 55vh;
+    /* border: 2px solid gold; */
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+#videoDiv>div{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+
+#videoDiv> #leftDiv
+{
+    width: 50%;
+    border-radius: 10px 10px 0px 0px;
+}
+#videoDiv> #leftDiv>iframe
+{
+    width: 100%;
+    height: 40vh;
+    border-radius: 7px;
+}
+#rightDiv
+{
+    display: flex;
+    gap: 10px;
+}
+#rightDiv>div{
+    width: 50%;
+    height: 55vh;
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#rightDiv>div>img
+{
+    width: 100%;
+    height: 23vh;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.TwoHead
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 0 8px;
+    padding: 16px 16px 0;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #151b39;
+    max-height: 68px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+}
+.View
+{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(21,27,57,.6);
+    padding: 10px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+#healthSection
+{
+    width: 100%;
+    height: 75vh;
+    /* border: 1px solid black; */
+    margin-top: 90px;
+    background-color:  rgb(238,238,238);
+}
+#healthSection .innerSec
+{
+    max-width: 1050px;
+    /* border: 1px solid red; */
+    height: 62vh;
+    margin: auto;
+      box-sizing: border-box;
+     margin-left: 85px;
+     margin-top: 20px;
+}
+.TextAndViewAll
+{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.health{
+
+font-family: Arial, Helvetica, sans-serif;
+color: #151b39;
+font-size: 20px;
+letter-spacing: .25px;
+display: block;
+padding: 4px 0;
+font-weight: 100;
+text-transform: uppercase;
+}
+.PDescription{
+    width: 82%;
+    margin: auto;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0;
+    display: block;
+    color: #151b39;
+    margin-top: -14px;
+}
+
+.health+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    display: block;
+    color: rgba(21,27,57,.6);
+    padding: 10px;
+    cursor: pointer;
+}
+.innerSec{
+  display: grid;
+  margin: auto;
+  height: 62vh;
+  grid-template-columns: repeat(4,1fr);
+   
+}
+.innerSec>div{
+    margin-left: 20px;
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+}
+.innerSec>div>img{
+    width: 100%;
+    height: 35vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.innerSec>div h2{
+    margin: 0 0 2px;
+    padding: 5px 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: 62px;
+    overflow: hidden;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #191a20;
+    cursor: pointer;
+}
+
+.innerSec>div p{
+    margin: 0 0 2px;
+    padding: 5px 5px 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(21,27,57,.6);
+    height: 52px;
+    overflow: hidden;
+}
+

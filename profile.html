@@ -8,6 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300&family=Roboto+Mono&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/netmeds.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLXz6HPn0zs4wxAyVBUNGwmXOOc_Ls0MNhw&usqp=CAU"
+        type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="slider.css" /> -->
+   
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/nav1.css">
 </head>
@@ -104,9 +117,9 @@
                     <img id="userimage" src="https://www.netmeds.com/msassets/images/icons/account_information_blue.svg">
                 </div>
                 <div>
-                    <h2>Gautam Yadav</h2>
-                    <p>gk541996@gmail.com</p>
-                    <p>+91-7297909655</p>
+                    <h2 class="name"></h2>
+                    <p class="email"></p>
+                    <p class="mobile"></p>
                 </div>
             </div>
             <div id="userReward">
@@ -202,7 +215,7 @@
             
         </div>
          <hr>
-         <div class="setting">
+         <div class="setting" id="logout">
             <img class="image" src="https://www.netmeds.com/msassets/images/icons/lock_grey.svg">
             <pre>Logout                                         >          </pre>
             
@@ -214,12 +227,12 @@
             <p class="tag">LOGIN INFORMATION</p><br>
             <div>
                 <p class="title">EMAIL</p>
-                <p>GK541996@GMAIL.COM</p>
+                <p class="email"></p>
                 <hr class="HR">
             </div>
             <div>
                 <p class="title">MOBILE NUMBER</p>
-                <p>7297909655</p>
+                <p class="mobile"></p>
                 <hr class="HR">
             </div>
         </div>
@@ -227,7 +240,7 @@
             <p class="tag" > PERSONAL INFORMATION</p><br>
             <div>
                 <p class="title">FULL NAME</p>
-                <p>Gautam yadav</p>
+                <p class="name"></p>
                 <hr class="HR">
             </div>
             <div>
@@ -246,4 +259,3 @@
 </body>
 </html>
 <script src="scripts/profile.js" ></script>
-<script src=""

@@ -41,11 +41,36 @@ off.addEventListener("click",()=>{
    window.location.href="wishlist.html"
 })
 
-  let userData=JSON.parse(localStorage.getItem("addToCart"));  
+  let userData=JSON.parse(localStorage.getItem("loginDetails"))||[];  
 
-  userData.forEcah(function(el){
+  userData.forEach(function(el){
+       
+       let email=document.querySelector(".email");
+       email.innerText="";
+       email.innerText=el.Email;
+       let mobile=document.querySelector(".mobile");
+       mobile.innerText="";
+       mobile.innerText=el.Mobile;
+       let name=document.querySelector(".name");
+       name.innerText="";
+       name.innerText=`${el.FName} ${el.LName}`;
+
 
   })
+
+  let logout=document.querySelector("#logout");
+  logout.style.cursor="pointer";
+  logout.addEventListener("click",function(){
+     deleteProduct();
+  })
+  
+  function deleteProduct()
+  {
+   console.log("jhj")
+     localStorage.removeItem("loginDetails");
+     window.location.reload();
+     window.location.href="index.html"
+  }
 
 
   var boodata = JSON.parse(localStorage.getItem("loginDetails")) || [];
@@ -94,4 +119,6 @@ function myWell() {
 function myLab() {
     window.location.href = "Lab_test.html"
 }
+
+
 

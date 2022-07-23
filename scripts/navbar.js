@@ -1,5 +1,4 @@
 
-
 var boodata = JSON.parse(localStorage.getItem("loginDetails")) || [];
 console.log(boodata)
 let a = "";

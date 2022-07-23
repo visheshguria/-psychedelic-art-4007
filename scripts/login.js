@@ -29,7 +29,7 @@ function myFun(el){
         
         else if(ele.Email==signinObj.email && ele.Password==signinObj.password){
             display="Login Successful"
-            window.location.href="navbar.html";
+            window.location.href="index.html";
             console.log("right")
             arr.push(ele)
         }

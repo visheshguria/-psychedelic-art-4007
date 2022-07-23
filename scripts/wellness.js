@@ -67,7 +67,7 @@ var arr = [
 ]
 
 
-var cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart = JSON.parse(localStorage.getItem("addToCart")) || [];
 arr.map(function (ele) {
 
     var div1 = document.createElement("div")
@@ -86,7 +86,7 @@ arr.map(function (ele) {
 var data1 = [
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/930971/skin_elements_face_pack_turmeric_multani_mitti_100_gm_0_2.jpg",
-        des: "Skin Elements Face Pack - Turmeric & Multani Mitti 100 gm",
+        name: "Skin Elements Face Pack - Turmeric & Multani Mitti 100 gm",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price * RS 248.98",
         mrp: "MRP Rs 399.00",
@@ -94,7 +94,7 @@ var data1 = [
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/959727/hashmi_vetoll_xl_capsule_20s_0_0.jpg",
-        des: "Hashmi Vetoil XL capsule 20's &  Vetoil XL capsule 40's",
+        name: "Hashmi Vetoil XL capsule 20's &  Vetoil XL capsule 40's",
         smalltxt: "MKT:Hashmi Unani pharmacy",
         price: "Best Price Rs 797.00",
         mrp: "MRP Rs 886.00",
@@ -102,27 +102,27 @@ var data1 = [
 
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/959708/hashmi_hard_rock_capsule_20s_0_0.jpg",
-        des: "Hashmi Hard Rock Capsule 20's & Hard Rock Capsule 20's",
+        name: "Hashmi Hard Rock Capsule 20's & Hard Rock Capsule 20's",
         smalltxt: "Mkt: Hashmi Unani Pharmacy",
         price: "Best Price Rs 1805.00",
         mrp: "MRP Rs 1900.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/924985/skin_elements_mens_intimate_wash_60_ml_0_2.jpg",
-        des: "Skin Elements Men's Intimate Wash 60 ml",
+        name: "Skin Elements Men's Intimate Wash 60 ml",
         smalltxt: " Mkt: Kapco International Limited",
         price: "Best Price Rs 248.00",
         mrp: "MRP Rs 399.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/924992/skin_elements_mens_intimate_wash_120_ml_0_2.jpg",
-        des: "Skin Elements Men's Intimate Wash 120 ml",
+        name: "Skin Elements Men's Intimate Wash 120 ml",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 499.00",
         mrp: "MRP Rs 699.00",
     },
 ]
-var cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart = JSON.parse(localStorage.getItem("addToCart")) || [];
 displayitems(data1)
 function displayitems(data1) {
     document.querySelector("#box2").textContent = ""
@@ -133,9 +133,9 @@ function displayitems(data1) {
         img.setAttribute("id", "b-img")
         img.setAttribute("src", elem.img)
 
-        var des = document.createElement("p")
-        des.setAttribute("class", "para1")
-        des.textContent = elem.des;
+        var name = document.createElement("p")
+        name.setAttribute("class", "para1")
+        name.textContent = elem.name;
 
         var smalltxt = document.createElement("p")
         smalltxt.setAttribute("class", "para2")
@@ -154,17 +154,17 @@ function displayitems(data1) {
         btn.textContent = "Add To Cart"
         btn.addEventListener("click", function () {
             addcart(elem)
-            window.location.href = "cart.html";
+            // window.location.href = "cart.html";
         })
 
-        div.append(img, des, smalltxt, price, mrp, btn)
+        div.append(img, name, smalltxt, price, mrp, btn)
         document.querySelector("#box2").append(div);
     })
 }
 function addcart(elem) {
     console.log(elem)
     cart.push(elem)
-    localStorage.setItem("cartdata", JSON.stringify(cart))
+    localStorage.setItem("addToCart", JSON.stringify(cart))
 }
 
 // --------------------------------------------------
@@ -172,42 +172,42 @@ function addcart(elem) {
 var data2 = [
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/915649/accusure_pulse_oximeter_0_0.jpg",
-        des: "AccuSure Pulse Oximeter  you can also get the best deal here just clic on this product",
+        name: "AccuSure Pulse Oximeter  you can also get the best deal here just clic on this product",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 1799.00",
         mrp: "MRP Rs 3999.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/835057/dettol_antiseptic_liquid_550_ml_0.jpg",
-        des: "Dettol Antiseptic Liquid 550 ml & 300ml you can also get the bottle in just 50% of it, hurrry now before the offer gets end.  Antiseptic Liquid 550 ml",
+        name: "Dettol Antiseptic Liquid 550 ml & 300ml you can also get the bottle in just 50% of it, hurrry now before the offer gets end.  Antiseptic Liquid 550 ml",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 194.00",
         // mrp:"MRP Rs 3999.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/923355/3se_n95_healthcare_5_layers_particulate_respirator_khm_05_pack_of_2_0_0.jpg",
-        des: "3Se N95 Healthcare 5 Layers Particulate Respirator (KHM-05) 2's & 3Se N95 Healthcare 5 Layers Particulate Respirator (KHM-05) 6's",
+        name: "3Se N95 Healthcare 5 Layers Particulate Respirator (KHM-05) 2's & 3Se N95 Healthcare 5 Layers Particulate Respirator (KHM-05) 6's",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 240.00",
         // mrp:"MRP Rs 3999.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/948692/oxy5_refillable_portable_oxygen_can_6_litre_0_1.jpg",
-        des: "AOxy5 Refillable Portable Oxygen Can 6 Litre &  Refillable Portable Oxygen Can 6 Litre",
+        name: "AOxy5 Refillable Portable Oxygen Can 6 Litre &  Refillable Portable Oxygen Can 6 Litre",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 560.00",
         mrp: "MRP Rs 650.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/839437/fast_up_charge_natural_vitamin_c_tablets_orange_flavour_20_s_0.jpg",
-        des: "Fast&Up Charge Natural Vitamin C & Zinc Tablets - Orange Flavour 20's",
+        name: "Fast&Up Charge Natural Vitamin C & Zinc Tablets - Orange Flavour 20's",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 300.00",
         mrp: "MRP Rs 399.00",
     }
 ]
 
-var cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart = JSON.parse(localStorage.getItem("addToCart")) || [];
 displayitems1(data2)
 function displayitems1(data2) {
     document.querySelector("#box3").textContent = ""
@@ -218,9 +218,9 @@ function displayitems1(data2) {
         img1.setAttribute("id", "b-img")
         img1.setAttribute("src", element.img)
 
-        var des1 = document.createElement("p")
-        des1.setAttribute("class", "para1")
-        des1.textContent = element.des;
+        var name1 = document.createElement("p")
+        name1.setAttribute("class", "para1")
+        name1.textContent = element.name;
 
         var smalltxt1 = document.createElement("p")
         smalltxt1.setAttribute("class", "para2")
@@ -239,16 +239,16 @@ function displayitems1(data2) {
         btn.textContent = "Add To Cart"
         btn.addEventListener("click", function () {
             addcart(element)
-            window.location.href = "cart.html";
+            // window.location.href = "cart.html";
         })
 
         function addcart(element) {
             console.log(element)
             cart.push(element)
-            localStorage.setItem("cartdata", JSON.stringify(cart))
+            localStorage.setItem("addToCart", JSON.stringify(cart))
         }
 
-        div1.append(img1, des1, smalltxt1, price1, mrp1, btn)
+        div1.append(img1, name1, smalltxt1, price1, mrp1, btn)
         document.querySelector("#box3").append(div1)
 
     })
@@ -258,42 +258,42 @@ function displayitems1(data2) {
 var data3 = [
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/15580/accu_chek_active_test_strips_50s_0_1.jpg",
-        des: "Accu-Chek Active Test Strips 50's and get 100ml coupon ",
+        name: "Accu-Chek Active Test Strips 50's and get 100ml coupon ",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 809.00",
         mrp: "MRP Rs 975.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/354458/accu_chek_active_test_strip_100_s_0.jpg",
-        des: "Accu-Chek Active Test Strips 100's and get 100ml coupon ",
+        name: "Accu-Chek Active Test Strips 100's and get 100ml coupon ",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 1487.00",
         mrp: "MRP Rs 1700.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/835774/accu_chek_instant_test_strips_50_s_0.jpg",
-        des: "Accu-Chek Instant Test Strips 50's and get 100ml coupon",
+        name: "Accu-Chek Instant Test Strips 50's and get 100ml coupon",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 815.00",
         mrp: "MRP Rs 975.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/950142/mylab_coviself_covid_19_rapid_antigen_self_test_kit_0_1.jpg",
-        des: "Mylab Coviself Covid-19 Rapid Antigen Self Test Kit",
+        name: "Mylab Coviself Covid-19 Rapid Antigen Self Test Kit",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 200.00",
         mrp: "MRP Rs 250.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/383204/onetouch_select_test_strip_50s_0_4.jpg",
-        des: "Onetouch Select Test Strip 50's and get 100ml coupon & get a best offer and get 1000ml in just 50% of it",
+        name: "Onetouch Select Test Strip 50's and get 100ml coupon & get a best offer and get 1000ml in just 50% of it",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 1145.00",
 
     },
 ]
 
-var cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart = JSON.parse(localStorage.getItem("addToCart")) || [];
 displayitems12(data3)
 function displayitems12(data3) {
     document.querySelector("#box4").textContent = ""
@@ -305,9 +305,9 @@ function displayitems12(data3) {
         img.setAttribute("id", "b-img")
         img.setAttribute("src", element.img);
 
-        var des = document.createElement("p")
-        des.setAttribute("class", "para1")
-        des.textContent = element.des;
+        var name = document.createElement("p")
+        name.setAttribute("class", "para1")
+        name.textContent = element.name;
 
         var smalltxt = document.createElement("p")
         smalltxt.setAttribute("class", "para2")
@@ -326,16 +326,16 @@ function displayitems12(data3) {
         btn.textContent = "Add To Cart"
         btn.addEventListener("click", function () {
             addcart(element)
-            window.location.href = "cart.html";
+            // window.location.href = "cart.html";
         })
 
         function addcart(element) {
             console.log(element)
             cart.push(element)
-            localStorage.setItem("cartdata", JSON.stringify(cart))
+            localStorage.setItem("addToCart", JSON.stringify(cart))
         }
 
-        div.append(img, des, smalltxt, price, mrp, btn)
+        div.append(img, name, smalltxt, price, mrp, btn)
         document.querySelector("#box4").append(div)
     })
 }
@@ -344,35 +344,35 @@ function displayitems12(data3) {
 var data4 = [
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/829438/ayur_herbal_body_care_lotion_cocoa_butter_1000_ml_0_1.jpg",
-        des: "Ayur Herbal Body Care Lotion - Cocoa Butter 1000 ml & 500ml & 250ml",
+        name: "Ayur Herbal Body Care Lotion - Cocoa Butter 1000 ml & 500ml & 250ml",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 237.00",
         mrp: "MRP Rs 250.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/889433/aroma_magic_juniper_berry_oil_free_moisturiser_100_ml_0_0.jpg",
-        des: "Aroma Magic Juniper Berry Oil Free Moisturiser 100 ml & 200ml-- 300ml",
+        name: "Aroma Magic Juniper Berry Oil Free Moisturiser 100 ml & 200ml-- 300ml",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 174.00",
         mrp: "MRP Rs 204.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/833986/nivea_nourishing_lotion_body_milk_deep_moisture_serum_200_ml_0_1.jpg",
-        des: "Nivea Nourishing Lotion Body Milk - Deep Moisture Serum 200 ml",
+        name: "Nivea Nourishing Lotion Body Milk - Deep Moisture Serum 200 ml",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 189.00",
         mrp: "MRP Rs 199.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/829452/ayur_herbal_moisturizer_lotion_1000_ml_0.jpg",
-        des: "Ayur Herbal Moisturizer Lotion 1000 ml & 500ml -- 250ml with a box",
+        name: "Ayur Herbal Moisturizer Lotion 1000 ml & 500ml -- 250ml with a box",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 237.00",
         mrp: "MRP Rs 250.00",
     },
     {
         img: "https://www.netmeds.com/images/product-v1/150x150/829441/ayur_herbal_deep_cleansing_milk_lotion_with_aloe_vera_500_ml_0.jpg",
-        des: "Ayur Herbal Deep Cleansing Milk Lotion with Aloe Vera 500 ml & 1000ml ",
+        name: "Ayur Herbal Deep Cleansing Milk Lotion with Aloe Vera 500 ml & 1000ml ",
         smalltxt: "Mkt: Kapco International Limited",
         price: "Best Price Rs 114.00",
         mrp: "MRP Rs 250.00",
@@ -380,7 +380,7 @@ var data4 = [
     },
 ]
 
-var cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart = JSON.parse(localStorage.getItem("addToCart")) || [];
 displayitems123(data3)
 function displayitems123(data3) {
     document.querySelector("#box5").textContent = ""
@@ -392,9 +392,9 @@ function displayitems123(data3) {
         img.setAttribute("id", "b-img")
         img.setAttribute("src", element.img);
 
-        var des = document.createElement("p")
-        des.setAttribute("class", "para1")
-        des.textContent = element.des;
+        var name = document.createElement("p")
+        name.setAttribute("class", "para1")
+        name.textContent = element.name;
 
         var smalltxt = document.createElement("p")
         smalltxt.setAttribute("class", "para2")
@@ -413,16 +413,16 @@ function displayitems123(data3) {
         btn.textContent = "Add To Cart"
         btn.addEventListener("click", function () {
             addcart(element)
-            window.location.href = "cart.html";
+            // window.location.href = "cart.html";
         })
 
         function addcart(element) {
             console.log(element)
             cart.push(element)
-            localStorage.setItem("cartdata", JSON.stringify(cart))
+            localStorage.setItem("addToCart", JSON.stringify(cart))
         }
 
-        div.append(img, des, smalltxt, price, mrp, btn)
+        div.append(img, name, smalltxt, price, mrp, btn)
         document.querySelector("#box5").append(div)
     })
 }
@@ -457,7 +457,7 @@ var data5 = [
 ]
 
 // var products=JSON.parse(localStorage.getItem("shoppingitems"))
-var cart = JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart = JSON.parse(localStorage.getItem("addToCart")) || [];
 data5.map(function (ele) {
 
     var div1 = document.createElement("div")
@@ -472,6 +472,9 @@ data5.map(function (ele) {
 
 });
 
+
+
+//navbar 
 
 
 var boodata = JSON.parse(localStorage.getItem("loginDetails")) || [];

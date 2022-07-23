@@ -200,3 +200,29 @@ elecData.map(function(elem){
         return true;
     }
    }
+
+
+   
+   document.querySelector("#sign-in").addEventListener("click", mysect);
+
+
+function mysect() {
+    if (boodata.length > 0) {
+        window.location.href = "profile.html"
+    } else {
+        window.location.href = "signup.html"
+    }
+}
+
+document.querySelector("#cart").addEventListener("click", mycart);
+
+
+function mycart() {
+    window.location.href = "cart.html"
+}
+document.querySelector("#upload").addEventListener("click", myupload);
+
+
+function myupload() {
+    window.location.href = "upload.html"
+}

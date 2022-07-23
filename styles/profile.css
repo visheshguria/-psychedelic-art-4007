@@ -5,6 +5,9 @@ body{
     font-family: 'Roboto', sans-serif;
   
 }
+#accountname{
+    margin-left: 180px;
+}
 .container{
     display: flex;
     gap:30px;

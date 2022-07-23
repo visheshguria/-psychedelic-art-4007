@@ -1,0 +1,57 @@
+#wallet{
+    
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    height:400px;
+   
+}
+#appendreward{
+    height:400px;
+    width:70%;
+  
+}
+#amount{
+    display: flex;
+    height:250px;
+    gap:40px;
+    width:100%;
+ 
+}
+.min{
+    height:50px;
+    width:97%;
+    display: flex;
+    background-color: teal;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+.RS{
+    height:250px;
+    width:50%;
+   
+}
+.min2{
+    height:50px;
+    width:97%;
+    margin-top: 84px;
+    display: flex;
+    background-color: teal;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+#discription{
+    background-color: white;
+    border-radius: 8px;
+    display:flex;
+    gap:300px;
+    height:146px;
+    width:100%;
+   
+}
+#discription>div{
+    justify-content: center;
+    margin-top:40px;
+    margin-left: 30px;
+}

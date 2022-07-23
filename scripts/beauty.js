@@ -43,4 +43,14 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+// redirect to skin-care page
 
+document.getElementById("SkinCare").addEventListener("click", function(){
+  window.location.href="../SkinCarePage/skin-care.html";
+})
+
+// redirect to hair care essential page
+
+document.getElementById("HairCare").addEventListener("click", function(){
+  window.location.href="../Hair Care Essential/HairCare.html";
+})

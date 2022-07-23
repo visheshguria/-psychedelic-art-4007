@@ -51,6 +51,7 @@ let userData=JSON.parse(localStorage.getItem("loginDetails"))||[];
        let name=document.querySelector(".name");
        name.innerText="";
        name.innerText=`${el.FName} ${el.LName}`;
+       
 
 
   })

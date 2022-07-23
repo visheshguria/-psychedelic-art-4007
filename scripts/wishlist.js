@@ -54,6 +54,15 @@ let userData=JSON.parse(localStorage.getItem("loginDetails"))||[];
        let name=document.querySelector(".name");
        name.innerText="";
        name.innerText=`${el.FName} ${el.LName}`;
+       let email1=document.querySelector(".email");
+       email1.innerText="";
+       email1.innerText=el.Email;
+       let mobile1=document.querySelector(".mobile");
+       mobile1.innerText="";
+       mobile1.innerText=el.Mobile;
+       let name1=document.querySelector(".name");
+       name1.innerText="";
+       name1.innerText=`${el.FName} ${el.LName}`;
 
 
   })

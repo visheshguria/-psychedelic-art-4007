@@ -2,87 +2,86 @@
 
 
 
-let x=document.getElementById("getreward");
-x.style.cursor="pointer";
-x.addEventListener("click",()=>{
-   window.location.href="myReward.html"
+let x = document.getElementById("getreward");
+x.style.cursor = "pointer";
+x.addEventListener("click", () => {
+    window.location.href = "myReward.html"
 });
-let y=document.getElementById("payment");
-y.style.cursor="pointer";
-y.addEventListener("click",()=>{
-   window.location.href="payment.html"
+let y = document.getElementById("payment");
+y.style.cursor = "pointer";
+y.addEventListener("click", () => {
+    window.location.href = "payment.html"
 });
-let z=document.getElementById("medicineorder");
-z.style.cursor="pointer";
-z.addEventListener("click",()=>{
-   window.location.href="orderhistory.html"
+let z = document.getElementById("medicineorder");
+z.style.cursor = "pointer";
+z.addEventListener("click", () => {
+    window.location.href = "orderhistory.html"
 });
 
-let account=document.querySelector("#accountinformation");
-account.style.cursor="pointer";
-account.addEventListener("click",()=>{
-   window.location.href="profile.html"
+let account = document.querySelector("#accountinformation");
+account.style.cursor = "pointer";
+account.addEventListener("click", () => {
+    window.location.href = "profile.html"
 })
 
-let wallet=document.querySelector("#wallet");
-wallet.style.cursor="pointer";
-wallet.addEventListener("click",()=>{
-   window.location.href="wallet.html"
+let wallet = document.querySelector("#wallet");
+wallet.style.cursor = "pointer";
+wallet.addEventListener("click", () => {
+    window.location.href = "wallet.html"
 })
 
-let offer=document.querySelector("#offerzone");
-offer.style.cursor="pointer";
-offer.addEventListener("click",()=>{
-   window.location.href="profile.html"
+let offer = document.querySelector("#offerzone");
+offer.style.cursor = "pointer";
+offer.addEventListener("click", () => {
+    window.location.href = "profile.html"
 })
-let off=document.querySelector("#wishlist");
-off.style.cursor="pointer";
-off.addEventListener("click",()=>{
-   window.location.href="wishlist.html"
+let off = document.querySelector("#wishlist");
+off.style.cursor = "pointer";
+off.addEventListener("click", () => {
+    window.location.href = "wishlist.html"
 })
 
-  let userData=JSON.parse(localStorage.getItem("loginDetails"))||[];  
+let userData = JSON.parse(localStorage.getItem("loginDetails")) || [];
 
-  userData.forEach(function(el){
-       
-       let email=document.querySelector(".email");
-       email.innerText="";
-       email.innerText=el.Email;
-       let mobile=document.querySelector(".mobile");
-       mobile.innerText="";
-       mobile.innerText=el.Mobile;
-       let name=document.querySelector(".name");
-       name.innerText="";
-       name.innerText=`${el.FName} ${el.LName}`;
-       let email1=document.querySelector(".email");
-       email1.innerText="";
-       email1.innerText=el.Email;
-       let mobile1=document.querySelector(".mobile");
-       mobile1.innerText="";
-       mobile1.innerText=el.Mobile;
-       let name1=document.querySelector(".name");
-       name1.innerText="";
-       name1.innerText=`${el.FName} ${el.LName}`;
+userData.forEach(function (el) {
 
-
-  })
-
-  let logout=document.querySelector("#logout");
-  logout.style.cursor="pointer";
-  logout.addEventListener("click",function(){
-     deleteProduct();
-  })
-  
-  function deleteProduct()
-  {
-   
-     localStorage.removeItem("loginDetails");
-     window.location.reload();
-     window.location.href="index.html"
-  }
+    let email = document.querySelector(".email");
+    email.innerText = "";
+    email.innerText = el.Email;
+    let mobile = document.querySelector(".mobile");
+    mobile.innerText = "";
+    mobile.innerText = el.Mobile;
+    let name = document.querySelector(".name");
+    name.innerText = "";
+    name.innerText = `${el.FName} ${el.LName}`;
+    let email1 = document.querySelector(".email1");
+    email1.innerText = "";
+    email1.innerText = el.Email;
+    let mobile1 = document.querySelector(".mobile1");
+    mobile1.innerText = "";
+    mobile1.innerText = el.Mobile;
+    let name1 = document.querySelector(".name1");
+    name1.innerText = "";
+    name1.innerText = `${el.FName} ${el.LName}`;
 
 
-  var boodata = JSON.parse(localStorage.getItem("loginDetails")) || [];
+})
+
+let logout = document.querySelector("#logout");
+logout.style.cursor = "pointer";
+logout.addEventListener("click", function () {
+    deleteProduct();
+})
+
+function deleteProduct() {
+
+    localStorage.removeItem("loginDetails");
+    window.location.reload();
+    window.location.href = "index.html"
+}
+
+
+var boodata = JSON.parse(localStorage.getItem("loginDetails")) || [];
 console.log(boodata)
 let a = "";
 if (boodata.length > 0) {

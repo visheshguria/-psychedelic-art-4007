@@ -9,9 +9,9 @@ let details=()=>
                 <img id="userimage" src="https://www.netmeds.com/msassets/images/icons/account_information_blue.svg">
             </div>
             <div>
-                <h2>Gautam Yadav</h2>
-                <p>gk541996@gmail.com</p>
-                <p>+91-7297909655</p>
+                <h2 class="name1"></h2>
+                <p class="email1"></p>
+                <p class="mobile1"></p>
             </div>
         </div>
         <div id="userReward">

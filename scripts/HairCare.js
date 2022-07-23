@@ -14,109 +14,114 @@
 // }
 
 
+import navbar from "../components/navbar.js";
+document.getElementById("navbar").innerHTML=navbar();
+
+
+
 let dataObj=
 [
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940215/loreal_paris_fall_resist_3x_anti_hairfall_shampoo_82_5_ml_0_0.jpg',
-        title:"L'Oreal Paris Fall Resist 3X Anti Hairfall Shampo.",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940215/loreal_paris_fall_resist_3x_anti_hairfall_shampoo_82_5_ml_0_0.jpg',
+        name:"L'Oreal Paris Fall Resist 3X Anti Hairfall Shampo.",
         price:79,
         Company:"LOrale India Pvt.Ltd"
  
      },
  
      {
-         imga:'https://www.netmeds.com/images/product-v1/150x150/889019/pro360_hair_grow_nutritional_powder_chocolate_flavour_250_gm_0_2.jpg',
-         title:"Pro360 Hair Grow Nutritional Powder - Chocholate flavour",
+         img:'https://www.netmeds.com/images/product-v1/150x150/889019/pro360_hair_grow_nutritional_powder_chocolate_flavour_250_gm_0_2.jpg',
+         name:"Pro360 Hair Grow Nutritional Powder - Chocholate flavour",
          price:472.50,
          Company:'GMM Health Care'
      },
      {
-         imga:'https://www.netmeds.com/images/product-v1/150x150/940272/loreal_paris_6_oil_nourish_shampoo_192_5_gm_0_0.jpg',
-         title:"L'Oreal Paris 6 Oil Nourish Shampoo 192.5 ml",
+         img:'https://www.netmeds.com/images/product-v1/150x150/940272/loreal_paris_6_oil_nourish_shampoo_192_5_gm_0_0.jpg',
+         name:"L'Oreal Paris 6 Oil Nourish Shampoo 192.5 ml",
          price:189,
          Company:'LOrale India Pvt.Ltd'
      },
      {
-         imga:'https://www.netmeds.com/images/product-v1/150x150/825038/kerala_ayurveda_kesini_oil_100_ml_0.jpg',
-         title:"Kerala Ayurveda Kesini Oil 100 ml",
+         img:'https://www.netmeds.com/images/product-v1/150x150/825038/kerala_ayurveda_kesini_oil_100_ml_0.jpg',
+         name:"Kerala Ayurveda Kesini Oil 100 ml",
          price:289,
          Company:'Kerala Ayurvedic Ltd',
      },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/959469/bold_care_anti_dandruff_shampoo_for_men_200_ml_0_0.jpg',
-        title:"Bold Care Ketoconazole and Zinc Pyrithione Anti Dandruff ",
+        img:'https://www.netmeds.com/images/product-v1/150x150/959469/bold_care_anti_dandruff_shampoo_for_men_200_ml_0_0.jpg',
+        name:"Bold Care Ketoconazole and Zinc Pyrithione Anti Dandruff ",
         price:445.29,
         Company:'Oddity Health Care Ltd'
 
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940246/loreal_paris_total_repair_5_serum_40_ml_0_0.jpg',
-        title:"L'Oreal Paris Total Repair 5 Serum 40 Ml.",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940246/loreal_paris_total_repair_5_serum_40_ml_0_0.jpg',
+        name:"L'Oreal Paris Total Repair 5 Serum 40 Ml.",
         price:175,
         Company:'LOrale India Pvt.Ltd'
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940235/loreal_paris_color_protect_conditioner_71_5_ml_0_0.jpg',
-        title:"L'Oreal Paris Color Protect Conditioner 71.5 Ml",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940235/loreal_paris_color_protect_conditioner_71_5_ml_0_0.jpg',
+        name:"L'Oreal Paris Color Protect Conditioner 71.5 Ml",
         price:130,
         Company:'LOrale India Pvt.Ltd'
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/959473/bold_care_hair_regrowth_combo_pack_minoxidil_hair_growth_oil_60_ml_biotin_hair_growth_tablets_60s_1s_0_0.jpg',
-        title:"Bold Care Hair Regrowth Combo Pack ",
+        img:'https://www.netmeds.com/images/product-v1/150x150/959473/bold_care_hair_regrowth_combo_pack_minoxidil_hair_growth_oil_60_ml_biotin_hair_growth_tablets_60s_1s_0_0.jpg',
+        name:"Bold Care Hair Regrowth Combo Pack ",
         price:890,
         Company:'Oddity Health Care Ltd'
 
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940221/loreal_paris_extraordinary_clay_shampoo_82_5_ml_184948_0_3.jpg',
-        title:"Biotique Bio Papaya Revitalizing Tan Removal. ",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940221/loreal_paris_extraordinary_clay_shampoo_82_5_ml_184948_0_3.jpg',
+        name:"Biotique Bio Papaya Revitalizing Tan Removal. ",
         price:240,
         Company:'Bioveda farmacy private limited ',
     },
  
     {
-     imga:'https://www.netmeds.com/images/product-v1/150x150/940285/loreal_paris_dream_lengths_conditioner_71_5_gm_0_0.jpg',
-     title:"Vlcc 7X Ultra Whitening & Brightening Charcoal Peel.",
+     img:'https://www.netmeds.com/images/product-v1/150x150/940285/loreal_paris_dream_lengths_conditioner_71_5_gm_0_0.jpg',
+     name:"Vlcc 7X Ultra Whitening & Brightening Charcoal Peel.",
      price:130,
      Company:'VLCC Personal Care Pvt,Ltd'
 
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940283/loreal_paris_dream_lengths_shampoo_192_5_gm_0_0.jpg',
-        title:"Mirabelle Korea Gold + Charcoal Dual System Facial Sheet Mask 25 Ml",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940283/loreal_paris_dream_lengths_shampoo_192_5_gm_0_0.jpg',
+        name:"Mirabelle Korea Gold + Charcoal Dual System Facial Sheet Mask 25 Ml",
         price:437,
         Company:'Mirabelle Cosmetic Pvt.Ltd '
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940274/loreal_paris_6_oil_nourish_conditioner_192_5_gm_0_0.jpg',
-        title:"Himalaya Oil Clear Mud Face Pack 50 gm",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940274/loreal_paris_6_oil_nourish_conditioner_192_5_gm_0_0.jpg',
+        name:"Himalaya Oil Clear Mud Face Pack 50 gm",
         price:667,
         Company:'The himalaya drug compay',
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940242/loreal_paris_total_repair_5_shampoo_82_5_ml_0_0.jpg',
-        title:"Jovees Harbel Care Taker",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940242/loreal_paris_total_repair_5_shampoo_82_5_ml_0_0.jpg',
+        name:"Jovees Harbel Care Taker",
         price:243,
         Company:'Jovees Harbel Care India Pvt.Ltd'
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940248/loreal_paris_total_repair_5_conditioner_71_5_ml_0_0.jpg',
-        title:"Rose Water Toner 100 Ml",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940248/loreal_paris_total_repair_5_conditioner_71_5_ml_0_0.jpg',
+        name:"Rose Water Toner 100 Ml",
         price:189,
         Company:'VLCC Personal Care Ltd',
     },
 
 
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/362506/scalpe_plus_anti_dandruff_shampoo_75_ml_0_1.jpg',
-        title:"Klairs Supple Preparation Facial Toner 180 ml & best quality forever",
+        img:'https://www.netmeds.com/images/product-v1/150x150/362506/scalpe_plus_anti_dandruff_shampoo_75_ml_0_1.jpg',
+        name:"Klairs Supple Preparation Facial Toner 180 ml & best quality forever",
         price:1215,
         Company:'Limese primvate limited company'
     },
     {
-        imga:'https://www.netmeds.com/images/product-v1/150x150/940269/loreal_paris_6_oil_nourish_shampoo_82_5_gm_185269_0_3.jpg',
-        title:"Jovees Green Tea Toner 100 ml",
+        img:'https://www.netmeds.com/images/product-v1/150x150/940269/loreal_paris_6_oil_nourish_shampoo_82_5_gm_185269_0_3.jpg',
+        name:"Jovees Green Tea Toner 100 ml",
         price:195,
         Company:'Jovees harbel Care limited',
     },
@@ -126,7 +131,7 @@ let dataObj=
 // console.log(dataObj.length);
 
 
-let array=JSON.parse(localStorage.getItem("SaveInLs"))|| [];
+let array=JSON.parse(localStorage.getItem("addToCart"))|| [];
 
 
 
@@ -142,14 +147,14 @@ function displaydata(dataObj)
     
     
         let picture = document.createElement("img");
-        picture.setAttribute("src", elem.imga);
+        picture.setAttribute("src", elem.img);
         
         let compan=document.createElement("p");
         compan.innerText="Mkt :"+" " + elem.Company;
         compan.setAttribute("class","Com")
       
         let Titl = document.createElement("h3");
-        Titl.innerText = elem.title;
+        Titl.innerText = elem.name;
         Titl.setAttribute("class","Title")
     
     
@@ -162,11 +167,11 @@ function displaydata(dataObj)
         but.setAttribute("class","butt");
         but.addEventListener("click", function(){
           
-            if(StoreData(elem.imga)==true)
+            if(StoreData(elem.img)==true)
             {
                 array.push(elem);
 
-                localStorage.setItem("SaveInLs", JSON.stringify(array));
+                localStorage.setItem("addToCart", JSON.stringify(array));
                
 
                 alert("Product Added Successfully");
@@ -194,7 +199,7 @@ function StoreData(el)
   
    let filter= array.filter(function(elem){
 
-     return elem.imga==el;
+     return elem.img==el;
     
    });
 

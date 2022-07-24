@@ -85,7 +85,7 @@ https://github.com/visheshguria/-psychedelic-art-4007
 ## Contribution : -
 
 1.[Vishesh Guria][Team Leader]
-(Landing Page, Wellness Page, Ayush Product Page, Mom&baby Page)
+(Landing Page, Wellness Page, Ayush Product Page, Mom&baby Page, Merging, Flow)
 
 2.[Gautam Kumar]
 (Profile Section--> wallet Page, Wishlist Page, Offer Page, Account Info, Logout Section/Upload Section)

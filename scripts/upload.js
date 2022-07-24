@@ -9,3 +9,8 @@ setTimeout(() => {
 
 
 }
+
+function homecome(){
+
+   window.location.href="index.html";
+}

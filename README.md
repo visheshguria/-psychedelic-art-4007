@@ -91,9 +91,10 @@ https://github.com/visheshguria/-psychedelic-art-4007
 
 1.[Vishesh Guria][Team Leader] 
 [Branch Merging, Functionality & Flow, Design Verification]
-(Landing Page, Wellness Page, Ayush Product Page, Mom&baby Page,)
+- `(Landing Page, Wellness Page, Ayush Product Page, Mom&baby Page,)`
 
 2.[Gautam Kumar]
+
 (Profile Section--> wallet Page, Wishlist Page, Offer Page, Account Info, Logout Section/Upload Section)
 
 3.[Deepak Sharma]

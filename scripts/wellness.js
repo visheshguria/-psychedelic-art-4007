@@ -524,3 +524,9 @@ function myLab() {
     window.location.href = "Lab_test.html"
 }
 
+
+
+document.getElementById("covid").addEventListener("click", ()=>{
+        window.location.href = "covid.html"
+})
+

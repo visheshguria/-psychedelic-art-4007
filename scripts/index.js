@@ -169,6 +169,10 @@ document.getElementById("sexualwellness").addEventListener("click", ()=>{
 })
 
 
+document.getElementById("covid").addEventListener("click", ()=>{
+    window.location.href = "covid.html"
+})
+
 
 // footer refrences 
 
@@ -184,6 +188,12 @@ document.querySelector(".last>div:nth-child(3)").addEventListener("click", ()=>{
 document.querySelector(".last>div:nth-child(4)").addEventListener("click", ()=>{
     window.location.href= "beauty.html";
 });
+
+document.getElementById("covid").addEventListener("click", ()=>{
+    window.location.href = "covid.html"
+})
+
+
 
 
 

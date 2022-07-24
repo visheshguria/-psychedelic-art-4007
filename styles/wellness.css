@@ -9,6 +9,10 @@
     /* border: solid red; */
 }
 
+#covid{
+    cursor:pointer
+}
+
 
 .slideshow-container>div>img {
     width: 100%;

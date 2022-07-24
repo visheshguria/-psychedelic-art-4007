@@ -95,15 +95,18 @@ https://github.com/visheshguria/-psychedelic-art-4007
 
 2.[Gautam Kumar]
 
-(Profile Section--> wallet Page, Wishlist Page, Offer Page, Account Info, Logout Section/Upload Section)
+- `(Profile Section--> wallet Page, Wishlist Page, Offer Page, Account Info, Logout Section/Upload Section)`
 
 3.[Deepak Sharma]
-(Navbar Section, Signup Page, Login Page ,Device Product Page, Fitness Page, Cart Section, Payment Section, OTP Page, Display Page)
+
+- `(Navbar Section, Signup Page, Login Page ,Device Product Page, Fitness Page, Cart Section, Payment Section, OTP Page, Display Page)`
 
 4.[Tejas Kasure]
-(Lab Test Page, Footer section, Covid Essentail Page)
+
+- `(Lab Test Page, Footer section, Covid Essentail Page)`
 
 5.[Alal Uddin]
-(Beauty Page, Health Center, Skin-Care Page, Hair-Care Page, Netmed Video Page)
+
+- `(Beauty Page, Health Center, Skin-Care Page, Hair-Care Page, Netmed Video Page)`
 
 

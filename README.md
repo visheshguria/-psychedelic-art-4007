@@ -47,7 +47,12 @@ _To start with the Project run the following command in terminal in "backend" fo
   ![Landing Page]
 
 
-- **Sign-Up & Sign-In Page**
+- **Sign-Up Page**
+
+  ![Landing Page]
+  
+  
+  - **Sign-In Page**
 
   ![Landing Page]
 

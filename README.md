@@ -39,31 +39,31 @@ _To start with the Project run the following command in terminal in "backend" fo
 ### _Following are the Screenshots for the reference_
 
 - **Landing Page**
-  ![Landing Page](https://github.com/visheshguria/-psychedelic-art-4007/blob/master/index.html)
+  ![Landing Page](https://miro.medium.com/max/1400/1*wZ3xlMwKsOvfkN4nSXjD_w.png)
   
 
 - **Product Page**
 
-  ![Landing Page]
+  ![Landing Page](https://miro.medium.com/max/1400/1*sJX3BYceDaTN9Lt9d3HPLg.png)
 
 
 - **Sign-Up Page**
 
-  ![Landing Page]
+  ![Landing Page](https://miro.medium.com/max/1400/1*5CjSVwNTsX6Afly-w0tx1w.png)
   
   
   - **Sign-In Page**
 
-  ![Landing Page]
+  ![Landing Page](https://miro.medium.com/max/1400/1*2abbRjcbPs7sLSOPy04I3w.png)
 
 
 - **Cart Page**
 
-  ![Landing Page]
+  ![Landing Page](https://miro.medium.com/max/1400/1*Wqzwg5aDURpAsBfRDyDJoQ.png)
 
 - **Payment Page**
 
-  ![Landing Page]
+  ![Landing Page](https://miro.medium.com/max/1400/1*7LZ06iKE61ZqyPrpbyIaBg.png)
 
 ---
 

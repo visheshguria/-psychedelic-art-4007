@@ -10,7 +10,19 @@
       type="image/x-icon"
       sizes="16x16"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuLXz6HPn0zs4wxAyVBUNGwmXOOc_Ls0MNhw&usqp=CAU"
+        type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="icon" href="images/netmeds.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles/covid.css" />
+    <link rel="stylesheet" href="styles/nav1.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>
       COVID-19 Essentials: Business, Home & Personal Supplies Online - Netmeds
     </title>
@@ -18,6 +30,92 @@
   </head>
 
   <body>
+
+    <div id="navbar">
+      <a href="index.html">
+          <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="netmeds">
+      </a>
+      <div id="search-bar">
+          <select name="" id="" title="Delivery">
+              <option value="">Deliver to <span id="pin-code">110002</span></option>
+          </select>
+          <input type="text" placeholder="┊    Search for medicine and wellness products...">
+
+      </div>
+      <div id="right-data">
+          <div id="upr1" class="upper">
+              <i class='fas fa-file-upload' style="font-size:24px"></i>
+              <p id="upload">Upload</p>
+          </div>
+          <div id="upr2" class="upper">
+              <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+              <p id="cart">cart</p>
+          </div>
+          <div id="upr3" class="upper">
+              <i class='fas fa-user-circle' style='font-size:24px'></i>
+              <p id="sign-in">sign in/sign up</p>
+          </div>
+      </div>
+  </div>
+
+
+
+
+  <div id="sec-nav">
+      <div class="dropdown">
+          <img src="images/medi.png" alt="">
+          <button class="dropbtn">Medicine</button>
+          <div class="dropdown-content">
+              <a href="covid.html">All Medicines</a>
+              <a href="#">Previously Ordered Products</a>
+          </div>
+      </div>
+      <div class="nav-item">
+          <img src="images/wellness.png" alt="2">
+          <p id="myWell">Wellness</p>
+      </div>
+      <div class="nav-item">
+          <img src="images/lab.png" alt="3">
+          <p id="myLab">Lab Tests</p>
+      </div>
+      <div class="dropdown">
+          <img src="images/beau.png" alt="">
+          <button class="dropbtn">Beauty</button>
+          <div class="dropdown-content">
+              <a href="beauty.html">Personal Care</a>
+              <a href="beauty.html">Makeup</a>
+              <a href="HairCare.html">Hair</a>
+              <a href="skin-care.html">Skins</a>
+              <a href="index.html">Tools & Appliances</a>
+              <a href="mom&baby.html">Mom and Baby</a>
+          </div>
+      </div>
+      <div class="dropdown">
+          <img src="Images/health.png" alt="">
+          <button class="dropbtn">Health Corner</button>
+          <div class="dropdown-content">
+              <a href="health_library.html">Health Library</a>
+              <a href="#">PatienceAlike</a>
+              <a href="covid.html">Corona Awareness</a>
+          </div>
+      </div>
+  </div>
+  <div id="third-nav">
+      <p id="covid">COVID Essentials</p>
+      <p>Diabetes</p>
+      <p>Eyewear</p>
+      <p>Ayush</p>
+      <p>Ayurvedic</p>
+      <p>Homeopathy</p>
+      <p>Fitness</p>
+      <p>Mom & Baby</p>
+      <p>Devices</p>
+      <p>Surgicals</p>
+      <p>Sexual Wellness</p>
+      <p>Treatments</p>
+  </div>
+
+
     
     <!--================= Category Section  ================-->
     <div id="mainCont">
@@ -375,5 +473,6 @@
     </script>
     
     <script src="scripts/covid.js"></script>
+    <script src="./scripts/navbar.js"></script>
   </body>
 </html>

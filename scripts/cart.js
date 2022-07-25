@@ -213,6 +213,9 @@ document.querySelector("#proced").addEventListener("click",mycli);
 
 function mycli(){
 let paisa=document.querySelector("#total").innerText;
-localStorage.setItem('totalprice', JSON.stringify(paisa));
-window.location.href="payment.html"
+    let obb=[{
+      totalprice:paisa,
+    }];
+    localStorage.setItem('totalprice', JSON.stringify(obb));
+    window.location.href="payment.html"
 }

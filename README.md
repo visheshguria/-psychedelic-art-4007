@@ -81,7 +81,7 @@ https://drive.google.com/file/d/1wUccuUZZrChek7g8OP6ln0XWdIHOIfd8/view?usp=shari
 
 
 ### Netlfy Link
-https://dainty-capybara-ade72c.netlify.app/
+https://verdant-strudel-f074e5.netlify.app/
 
 ### Github Link
 https://github.com/visheshguria/-psychedelic-art-4007

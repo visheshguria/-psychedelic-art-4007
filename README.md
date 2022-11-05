@@ -52,7 +52,7 @@ _To start with the Project run the following command in terminal in "backend" fo
   ![Landing Page](https://miro.medium.com/max/1400/1*5CjSVwNTsX6Afly-w0tx1w.png)
   
   
-  - **Sign-In Page**
+- **Sign-In Page**
 
   ![Landing Page](https://miro.medium.com/max/1400/1*2abbRjcbPs7sLSOPy04I3w.png)
 

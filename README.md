@@ -7,7 +7,7 @@ Netmeds is one of India's leading healthcare aggregators and most trusted medici
 
 ### Project Description
 
-_To start with the Project run the following command in terminal in "backend" folder_
+_To start with the Project run the following command in terminal in "backend" folde_
 
 
 
